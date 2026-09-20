@@ -1,0 +1,14 @@
+[
+  {
+    "pr": "14730",
+    "channel": "determinism",
+    "fix_sha": "d33ef5335e05523e35a29530dbc389c52c8e7bc7",
+    "parent_sha": "056c6413b03a306b170bc18efb8fcf9cc1c8a3a5",
+    "output_oracle_equivalent": true,
+    "output_oracle_strength": "exact",
+    "output_oracle_blind": true,
+    "property_oracle_detects": false,
+    "invisible_confirmed": false,
+    "result": "ok"
+  }
+]

@@ -1,0 +1,227 @@
+{
+  "qiskit_version": "2.4.2",
+  "configs": 1800,
+  "violations": 24,
+  "by_kind": {
+    "idempotence": 24
+  },
+  "elapsed_s": 204.2,
+  "items": [
+    {
+      "width": 4,
+      "depth": 8,
+      "opt": 3,
+      "cmap": "ring",
+      "seed": 14,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 4,
+      "depth": 8,
+      "opt": 1,
+      "cmap": "ring",
+      "seed": 46,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 4,
+      "depth": 8,
+      "opt": 3,
+      "cmap": "ring",
+      "seed": 46,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 6,
+      "depth": 8,
+      "opt": 1,
+      "cmap": "ring",
+      "seed": 25,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 6,
+      "depth": 8,
+      "opt": 1,
+      "cmap": "line",
+      "seed": 41,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 6,
+      "depth": 8,
+      "opt": 3,
+      "cmap": "line",
+      "seed": 41,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 6,
+      "depth": 8,
+      "opt": 3,
+      "cmap": "ring",
+      "seed": 41,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 6,
+      "depth": 8,
+      "opt": 1,
+      "cmap": "ring",
+      "seed": 60,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 6,
+      "depth": 8,
+      "opt": 3,
+      "cmap": "line",
+      "seed": 60,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 6,
+      "depth": 8,
+      "opt": 3,
+      "cmap": "ring",
+      "seed": 60,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 6,
+      "depth": 8,
+      "opt": 1,
+      "cmap": "ring",
+      "seed": 67,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 8,
+      "depth": 8,
+      "opt": 1,
+      "cmap": "ring",
+      "seed": 1,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 8,
+      "depth": 8,
+      "opt": 1,
+      "cmap": "ring",
+      "seed": 25,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 8,
+      "depth": 8,
+      "opt": 1,
+      "cmap": "line",
+      "seed": 41,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 8,
+      "depth": 8,
+      "opt": 3,
+      "cmap": "ring",
+      "seed": 41,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 8,
+      "depth": 8,
+      "opt": 1,
+      "cmap": "ring",
+      "seed": 46,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 8,
+      "depth": 8,
+      "opt": 3,
+      "cmap": "line",
+      "seed": 56,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 8,
+      "depth": 8,
+      "opt": 1,
+      "cmap": "line",
+      "seed": 60,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 8,
+      "depth": 8,
+      "opt": 1,
+      "cmap": "ring",
+      "seed": 60,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 8,
+      "depth": 8,
+      "opt": 1,
+      "cmap": "line",
+      "seed": 66,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 8,
+      "depth": 8,
+      "opt": 3,
+      "cmap": "ring",
+      "seed": 66,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 8,
+      "depth": 8,
+      "opt": 1,
+      "cmap": "ring",
+      "seed": 73,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 8,
+      "depth": 8,
+      "opt": 3,
+      "cmap": "ring",
+      "seed": 73,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 8,
+      "depth": 8,
+      "opt": 1,
+      "cmap": "ring",
+      "seed": 92,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    }
+  ]
+}

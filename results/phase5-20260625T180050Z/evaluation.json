@@ -1,0 +1,122 @@
+{
+  "split": "all",
+  "cutoff_date": "2026-01-01",
+  "oracle_false_positive_rate": 0.2,
+  "by_source": {
+    "mutation": {
+      "change_stage": {
+        "n_events": 4,
+        "recall@20%": 0.25,
+        "mean_normalized_TTFR": 0.7614,
+        "mean_AUC_detection_vs_budget": 0.2386,
+        "detection_at_fraction": {
+          "5%": 0.25,
+          "10%": 0.25,
+          "20%": 0.25,
+          "40%": 0.25
+        },
+        "mean_selection_overhead_s": 0.0
+      },
+      "cheapest_first": {
+        "n_events": 4,
+        "recall@20%": 0.25,
+        "mean_normalized_TTFR": 0.7614,
+        "mean_AUC_detection_vs_budget": 0.2386,
+        "detection_at_fraction": {
+          "5%": 0.25,
+          "10%": 0.25,
+          "20%": 0.25,
+          "40%": 0.25
+        },
+        "mean_selection_overhead_s": 0.0
+      },
+      "diversity_only": {
+        "n_events": 4,
+        "recall@20%": 0.25,
+        "mean_normalized_TTFR": 0.7614,
+        "mean_AUC_detection_vs_budget": 0.2386,
+        "detection_at_fraction": {
+          "5%": 0.25,
+          "10%": 0.25,
+          "20%": 0.25,
+          "40%": 0.25
+        },
+        "mean_selection_overhead_s": 0.0
+      },
+      "history_only": {
+        "n_events": 4,
+        "recall@20%": 0.25,
+        "mean_normalized_TTFR": 0.7614,
+        "mean_AUC_detection_vs_budget": 0.2386,
+        "detection_at_fraction": {
+          "5%": 0.25,
+          "10%": 0.25,
+          "20%": 0.25,
+          "40%": 0.25
+        },
+        "mean_selection_overhead_s": 0.0
+      },
+      "proposed": {
+        "n_events": 4,
+        "recall@20%": 0.25,
+        "mean_normalized_TTFR": 0.7593,
+        "mean_AUC_detection_vs_budget": 0.2407,
+        "detection_at_fraction": {
+          "5%": 0.25,
+          "10%": 0.25,
+          "20%": 0.25,
+          "40%": 0.25
+        },
+        "mean_selection_overhead_s": 0.0008
+      },
+      "random": {
+        "n_events": 4,
+        "recall@20%": 0,
+        "mean_normalized_TTFR": 0.8353,
+        "mean_AUC_detection_vs_budget": 0.1647,
+        "detection_at_fraction": {
+          "5%": 0,
+          "10%": 0,
+          "20%": 0,
+          "40%": 0.25
+        },
+        "mean_selection_overhead_s": 0.0
+      }
+    }
+  },
+  "validity_gates": {
+    "all_passed": true,
+    "gates": [
+      {
+        "name": "metric_correctness",
+        "passed": true,
+        "detail": "caseA=True, caseB=True"
+      },
+      {
+        "name": "budget_compliance",
+        "passed": true,
+        "detail": "0 over-budget (event x selector)"
+      },
+      {
+        "name": "reproducibility",
+        "passed": true,
+        "detail": "0 non-deterministic rankings"
+      },
+      {
+        "name": "leakage_absence",
+        "passed": true,
+        "detail": "0 rankings changed by current-event outcome"
+      },
+      {
+        "name": "label_reproducibility",
+        "passed": true,
+        "detail": "0 label mismatches, 0 missing raw artifacts"
+      },
+      {
+        "name": "oracle_coverage",
+        "passed": true,
+        "detail": "0 records missing oracle_strength/raw_artifact"
+      }
+    ]
+  }
+}

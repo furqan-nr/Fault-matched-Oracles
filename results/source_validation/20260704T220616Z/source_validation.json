@@ -1,0 +1,15 @@
+[
+  {
+    "pr": "14956",
+    "channel": "global_phase",
+    "fix_sha": "1064921158bbb6457d43c72c4d1f0502537d1ca3",
+    "parent_sha": "1064921158bbb6457d43c72c4d1f0502537d1ca3^",
+    "output_oracle_equivalent": true,
+    "output_oracle_strength": "exact",
+    "output_oracle_blind": true,
+    "global_phase_delta": 0.0,
+    "property_oracle_detects": false,
+    "invisible_confirmed": false,
+    "result": "ok"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "fix": {
+    "raw_distinct": 1,
+    "func_distinct": 1,
+    "error": null
+  },
+  "parent": {
+    "raw_distinct": 6,
+    "func_distinct": 1,
+    "error": null
+  },
+  "runs_per_build": 50,
+  "hashseeds": [
+    "0",
+    "1",
+    "2",
+    "7",
+    "13"
+  ]
+}

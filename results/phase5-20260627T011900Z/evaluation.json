@@ -1,0 +1,1102 @@
+{
+  "split": "all",
+  "cutoff_date": "2026-01-01",
+  "random_seeds": 20,
+  "oracle_false_positive_rate": 0.0678,
+  "by_source": {
+    "mutation": {
+      "cheapest_first": {
+        "n_events": 9,
+        "recall@20%": 0.8889,
+        "mean_normalized_TTFR": 0.1226,
+        "mean_AUC_detection_vs_budget": 0.8774,
+        "detection_at_fraction": {
+          "5%": 0.8889,
+          "10%": 0.8889,
+          "20%": 0.8889,
+          "40%": 0.8889
+        },
+        "mean_selection_overhead_s": 0.0
+      },
+      "diversity_only": {
+        "n_events": 9,
+        "recall@20%": 0.8889,
+        "mean_normalized_TTFR": 0.1145,
+        "mean_AUC_detection_vs_budget": 0.8855,
+        "detection_at_fraction": {
+          "5%": 0.8889,
+          "10%": 0.8889,
+          "20%": 0.8889,
+          "40%": 0.8889
+        },
+        "mean_selection_overhead_s": 0.0
+      },
+      "history_only": {
+        "n_events": 9,
+        "recall@20%": 0.8889,
+        "mean_normalized_TTFR": 0.1226,
+        "mean_AUC_detection_vs_budget": 0.8774,
+        "detection_at_fraction": {
+          "5%": 0.8889,
+          "10%": 0.8889,
+          "20%": 0.8889,
+          "40%": 0.8889
+        },
+        "mean_selection_overhead_s": 0.0003
+      },
+      "change_stage": {
+        "n_events": 9,
+        "recall@20%": 0.8889,
+        "mean_normalized_TTFR": 0.1226,
+        "mean_AUC_detection_vs_budget": 0.8774,
+        "detection_at_fraction": {
+          "5%": 0.8889,
+          "10%": 0.8889,
+          "20%": 0.8889,
+          "40%": 0.8889
+        },
+        "mean_selection_overhead_s": 0.0
+      },
+      "proposed": {
+        "n_events": 9,
+        "recall@20%": 0.6667,
+        "mean_normalized_TTFR": 0.3078,
+        "mean_AUC_detection_vs_budget": 0.6922,
+        "detection_at_fraction": {
+          "5%": 0.5556,
+          "10%": 0.5556,
+          "20%": 0.6667,
+          "40%": 0.6667
+        },
+        "mean_selection_overhead_s": 0.0017
+      },
+      "random": {
+        "n_events": 9,
+        "n_seeds": 20,
+        "recall@20%": 0.6944,
+        "mean_normalized_TTFR": 0.2209,
+        "mean_AUC_detection_vs_budget": 0.7791,
+        "mean_selection_overhead_s": 0.0
+      }
+    }
+  },
+  "per_event": {
+    "mutation": {
+      "mut-disable-opt-loop-01": {
+        "cheapest_first": {
+          "detected": true,
+          "normalized_TTFR": 0.0331,
+          "AUC": 0.9669,
+          "recall@20%": 1
+        },
+        "diversity_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0166,
+          "AUC": 0.9834,
+          "recall@20%": 1
+        },
+        "history_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0331,
+          "AUC": 0.9669,
+          "recall@20%": 1
+        },
+        "change_stage": {
+          "detected": true,
+          "normalized_TTFR": 0.0331,
+          "AUC": 0.9669,
+          "recall@20%": 1
+        },
+        "proposed": {
+          "detected": true,
+          "normalized_TTFR": 0.0091,
+          "AUC": 0.9909,
+          "recall@20%": 1
+        },
+        "random": {
+          "detected": true,
+          "normalized_TTFR_median": 0.1205,
+          "AUC_median": 0.8795
+        }
+      },
+      "mut-drop-vf2postlayout-01": {
+        "cheapest_first": {
+          "detected": false,
+          "normalized_TTFR": 1.0,
+          "AUC": 0.0,
+          "recall@20%": 0
+        },
+        "diversity_only": {
+          "detected": false,
+          "normalized_TTFR": 1.0,
+          "AUC": 0.0,
+          "recall@20%": 0
+        },
+        "history_only": {
+          "detected": false,
+          "normalized_TTFR": 1.0,
+          "AUC": 0.0,
+          "recall@20%": 0
+        },
+        "change_stage": {
+          "detected": false,
+          "normalized_TTFR": 1.0,
+          "AUC": 0.0,
+          "recall@20%": 0
+        },
+        "proposed": {
+          "detected": false,
+          "normalized_TTFR": 1.0,
+          "AUC": 0.0,
+          "recall@20%": 0
+        },
+        "random": {
+          "detected": false,
+          "normalized_TTFR_median": 1.0,
+          "AUC_median": 0.0
+        }
+      },
+      "mut-downgrade-routing-01": {
+        "cheapest_first": {
+          "detected": true,
+          "normalized_TTFR": 0.0213,
+          "AUC": 0.9787,
+          "recall@20%": 1
+        },
+        "diversity_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0038,
+          "AUC": 0.9962,
+          "recall@20%": 1
+        },
+        "history_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0213,
+          "AUC": 0.9787,
+          "recall@20%": 1
+        },
+        "change_stage": {
+          "detected": true,
+          "normalized_TTFR": 0.0213,
+          "AUC": 0.9787,
+          "recall@20%": 1
+        },
+        "proposed": {
+          "detected": true,
+          "normalized_TTFR": 0.0014,
+          "AUC": 0.9986,
+          "recall@20%": 1
+        },
+        "random": {
+          "detected": true,
+          "normalized_TTFR_median": 0.0628,
+          "AUC_median": 0.9372
+        }
+      },
+      "mut-insert-redundant-cx-01": {
+        "cheapest_first": {
+          "detected": true,
+          "normalized_TTFR": 0.0009,
+          "AUC": 0.9991,
+          "recall@20%": 1
+        },
+        "diversity_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0009,
+          "AUC": 0.9991,
+          "recall@20%": 1
+        },
+        "history_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0009,
+          "AUC": 0.9991,
+          "recall@20%": 1
+        },
+        "change_stage": {
+          "detected": true,
+          "normalized_TTFR": 0.0009,
+          "AUC": 0.9991,
+          "recall@20%": 1
+        },
+        "proposed": {
+          "detected": true,
+          "normalized_TTFR": 0.8041,
+          "AUC": 0.1959,
+          "recall@20%": 0
+        },
+        "random": {
+          "detected": true,
+          "normalized_TTFR_median": 0.0079,
+          "AUC_median": 0.9921
+        }
+      },
+      "mut-drop-optimization-stage-01": {
+        "cheapest_first": {
+          "detected": true,
+          "normalized_TTFR": 0.027,
+          "AUC": 0.973,
+          "recall@20%": 1
+        },
+        "diversity_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0019,
+          "AUC": 0.9981,
+          "recall@20%": 1
+        },
+        "history_only": {
+          "detected": true,
+          "normalized_TTFR": 0.027,
+          "AUC": 0.973,
+          "recall@20%": 1
+        },
+        "change_stage": {
+          "detected": true,
+          "normalized_TTFR": 0.027,
+          "AUC": 0.973,
+          "recall@20%": 1
+        },
+        "proposed": {
+          "detected": true,
+          "normalized_TTFR": 0.0108,
+          "AUC": 0.9892,
+          "recall@20%": 1
+        },
+        "random": {
+          "detected": true,
+          "normalized_TTFR_median": 0.0909,
+          "AUC_median": 0.9091
+        }
+      },
+      "mut-force-opt-level-1-01": {
+        "cheapest_first": {
+          "detected": true,
+          "normalized_TTFR": 0.0161,
+          "AUC": 0.9839,
+          "recall@20%": 1
+        },
+        "diversity_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0044,
+          "AUC": 0.9956,
+          "recall@20%": 1
+        },
+        "history_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0161,
+          "AUC": 0.9839,
+          "recall@20%": 1
+        },
+        "change_stage": {
+          "detected": true,
+          "normalized_TTFR": 0.0161,
+          "AUC": 0.9839,
+          "recall@20%": 1
+        },
+        "proposed": {
+          "detected": true,
+          "normalized_TTFR": 0.1554,
+          "AUC": 0.8446,
+          "recall@20%": 1
+        },
+        "random": {
+          "detected": true,
+          "normalized_TTFR_median": 0.1457,
+          "AUC_median": 0.8543
+        }
+      },
+      "mut-force-opt-level-0-01": {
+        "cheapest_first": {
+          "detected": true,
+          "normalized_TTFR": 0.0013,
+          "AUC": 0.9987,
+          "recall@20%": 1
+        },
+        "diversity_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0007,
+          "AUC": 0.9993,
+          "recall@20%": 1
+        },
+        "history_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0013,
+          "AUC": 0.9987,
+          "recall@20%": 1
+        },
+        "change_stage": {
+          "detected": true,
+          "normalized_TTFR": 0.0013,
+          "AUC": 0.9987,
+          "recall@20%": 1
+        },
+        "proposed": {
+          "detected": true,
+          "normalized_TTFR": 0.0007,
+          "AUC": 0.9993,
+          "recall@20%": 1
+        },
+        "random": {
+          "detected": true,
+          "normalized_TTFR_median": 0.0042,
+          "AUC_median": 0.9958
+        }
+      },
+      "mut-downgrade-layout-trivial-01": {
+        "cheapest_first": {
+          "detected": true,
+          "normalized_TTFR": 0.0018,
+          "AUC": 0.9982,
+          "recall@20%": 1
+        },
+        "diversity_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0012,
+          "AUC": 0.9988,
+          "recall@20%": 1
+        },
+        "history_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0018,
+          "AUC": 0.9982,
+          "recall@20%": 1
+        },
+        "change_stage": {
+          "detected": true,
+          "normalized_TTFR": 0.0018,
+          "AUC": 0.9982,
+          "recall@20%": 1
+        },
+        "proposed": {
+          "detected": true,
+          "normalized_TTFR": 0.0008,
+          "AUC": 0.9992,
+          "recall@20%": 1
+        },
+        "random": {
+          "detected": true,
+          "normalized_TTFR_median": 0.0043,
+          "AUC_median": 0.9957
+        }
+      },
+      "mut-insert-redundant-x-01": {
+        "cheapest_first": {
+          "detected": true,
+          "normalized_TTFR": 0.002,
+          "AUC": 0.998,
+          "recall@20%": 1
+        },
+        "diversity_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0012,
+          "AUC": 0.9988,
+          "recall@20%": 1
+        },
+        "history_only": {
+          "detected": true,
+          "normalized_TTFR": 0.002,
+          "AUC": 0.998,
+          "recall@20%": 1
+        },
+        "change_stage": {
+          "detected": true,
+          "normalized_TTFR": 0.002,
+          "AUC": 0.998,
+          "recall@20%": 1
+        },
+        "proposed": {
+          "detected": true,
+          "normalized_TTFR": 0.7877,
+          "AUC": 0.2123,
+          "recall@20%": 0
+        },
+        "random": {
+          "detected": true,
+          "normalized_TTFR_median": 0.2952,
+          "AUC_median": 0.7048
+        }
+      }
+    }
+  },
+  "win_tie_loss": {
+    "mutation": {
+      "cheapest_first": {
+        "win": 5,
+        "tie": 1,
+        "loss": 3
+      },
+      "diversity_only": {
+        "win": 3,
+        "tie": 1,
+        "loss": 5
+      },
+      "history_only": {
+        "win": 5,
+        "tie": 1,
+        "loss": 3
+      },
+      "change_stage": {
+        "win": 5,
+        "tie": 1,
+        "loss": 3
+      },
+      "random": {
+        "win": 5,
+        "tie": 1,
+        "loss": 3
+      }
+    }
+  },
+  "random_multiseed": {
+    "mutation": {
+      "n_seeds": 20,
+      "recall@20%": {
+        "median": 0.7222,
+        "min": 0.4444,
+        "max": 0.8889
+      },
+      "mean_normalized_TTFR": {
+        "median": 0.2169,
+        "min": 0.1461,
+        "max": 0.3868
+      },
+      "mean_AUC_detection_vs_budget": {
+        "median": 0.7831,
+        "min": 0.6132,
+        "max": 0.8539
+      },
+      "detection_at_fraction": {
+        "5%": {
+          "median": 0.4444,
+          "min": 0,
+          "max": 0.7778
+        },
+        "10%": {
+          "median": 0.5556,
+          "min": 0,
+          "max": 0.7778
+        },
+        "20%": {
+          "median": 0.7222,
+          "min": 0.4444,
+          "max": 0.8889
+        },
+        "40%": {
+          "median": 0.8889,
+          "min": 0.5556,
+          "max": 0.8889
+        }
+      }
+    }
+  },
+  "detection_curve": {
+    "grid": [
+      0.0,
+      0.02,
+      0.04,
+      0.06,
+      0.08,
+      0.1,
+      0.12,
+      0.14,
+      0.16,
+      0.18,
+      0.2,
+      0.22,
+      0.24,
+      0.26,
+      0.28,
+      0.3,
+      0.32,
+      0.34,
+      0.36,
+      0.38,
+      0.4,
+      0.42,
+      0.44,
+      0.46,
+      0.48,
+      0.5,
+      0.52,
+      0.54,
+      0.56,
+      0.58,
+      0.6,
+      0.62,
+      0.64,
+      0.66,
+      0.68,
+      0.7,
+      0.72,
+      0.74,
+      0.76,
+      0.78,
+      0.8,
+      0.82,
+      0.84,
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      1.0
+    ],
+    "by_source": {
+      "mutation": {
+        "cheapest_first": [
+          0.0,
+          0.555556,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889
+        ],
+        "diversity_only": [
+          0.0,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889
+        ],
+        "history_only": [
+          0.0,
+          0.555556,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889
+        ],
+        "change_stage": [
+          0.0,
+          0.555556,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889
+        ],
+        "proposed": [
+          0.0,
+          0.555556,
+          0.555556,
+          0.555556,
+          0.555556,
+          0.555556,
+          0.555556,
+          0.555556,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.777778,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889
+        ],
+        "random": [
+          0.0,
+          0.333333,
+          0.333333,
+          0.333333,
+          0.444444,
+          0.555556,
+          0.555556,
+          0.666667,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889
+        ],
+        "random_band_min": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.222222,
+          0.222222,
+          0.444444,
+          0.444444,
+          0.444444,
+          0.444444,
+          0.444444,
+          0.444444,
+          0.555556,
+          0.555556,
+          0.555556,
+          0.555556,
+          0.555556,
+          0.666667,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.888889
+        ],
+        "random_band_max": [
+          0.0,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889
+        ]
+      }
+    }
+  },
+  "cost_distribution": {
+    "mutation": {
+      "per_unit_mean_cost_s": {
+        "n": 32,
+        "min": 8.3e-05,
+        "max": 0.325595,
+        "median": 0.008167,
+        "mean": 0.051463,
+        "total": 1.646827,
+        "stdev": 0.095411,
+        "cv": 1.854,
+        "p25": 0.005426,
+        "p75": 0.034268,
+        "iqr": 0.028842
+      },
+      "by_width_backend_mean_s": {
+        "n5-heavy_hex": 0.007671,
+        "n5-line": 0.008088,
+        "n8-heavy_hex": 0.016299,
+        "n8-line": 0.173796
+      }
+    }
+  },
+  "effect_sizes": {
+    "mutation": {
+      "metric": "AUC_detection_vs_budget",
+      "n_events": 9,
+      "proposed_vs": {
+        "cheapest_first": {
+          "cliffs_delta": -0.0494,
+          "magnitude": "negligible",
+          "a12": 0.4753
+        },
+        "diversity_only": {
+          "cliffs_delta": -0.2963,
+          "magnitude": "small",
+          "a12": 0.3519
+        },
+        "history_only": {
+          "cliffs_delta": -0.0494,
+          "magnitude": "negligible",
+          "a12": 0.4753
+        },
+        "change_stage": {
+          "cliffs_delta": -0.0494,
+          "magnitude": "negligible",
+          "a12": 0.4753
+        },
+        "random": {
+          "cliffs_delta": 0.0741,
+          "magnitude": "negligible",
+          "a12": 0.537
+        }
+      }
+    }
+  },
+  "bootstrap_ci": {
+    "mutation": {
+      "metric": "AUC_detection_vs_budget",
+      "by_selector": {
+        "cheapest_first": {
+          "mean": 0.8774,
+          "lo": 0.655,
+          "hi": 0.9929
+        },
+        "diversity_only": {
+          "mean": 0.8855,
+          "lo": 0.6625,
+          "hi": 0.9983
+        },
+        "history_only": {
+          "mean": 0.8774,
+          "lo": 0.655,
+          "hi": 0.9929
+        },
+        "change_stage": {
+          "mean": 0.8774,
+          "lo": 0.655,
+          "hi": 0.9929
+        },
+        "proposed": {
+          "mean": 0.6922,
+          "lo": 0.4001,
+          "hi": 0.9117
+        },
+        "random": {
+          "mean": 0.7791,
+          "lo": 0.75,
+          "hi": 0.8039
+        }
+      }
+    }
+  },
+  "validity_gates": {
+    "all_passed": true,
+    "gates": [
+      {
+        "name": "metric_correctness",
+        "passed": true,
+        "detail": "caseA=True, caseB=True"
+      },
+      {
+        "name": "budget_compliance",
+        "passed": true,
+        "detail": "0 over-budget (event x selector)"
+      },
+      {
+        "name": "reproducibility",
+        "passed": true,
+        "detail": "0 non-deterministic rankings"
+      },
+      {
+        "name": "leakage_absence",
+        "passed": true,
+        "detail": "0 rankings changed by current-event outcome"
+      },
+      {
+        "name": "label_reproducibility",
+        "passed": true,
+        "detail": "0 label mismatches, 0 missing raw artifacts"
+      },
+      {
+        "name": "oracle_coverage",
+        "passed": true,
+        "detail": "0 records missing oracle_strength/raw_artifact"
+      }
+    ]
+  }
+}

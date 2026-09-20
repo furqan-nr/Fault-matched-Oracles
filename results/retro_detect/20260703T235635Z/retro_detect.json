@@ -1,0 +1,35 @@
+[
+  {
+    "pr": "14956",
+    "channel": "global_phase",
+    "pre": "2.1.0",
+    "post": "2.2.0",
+    "output_oracle_blind": false,
+    "global_phase_delta": null,
+    "channel_diverges": false,
+    "retro_detected": false,
+    "result": "ok"
+  },
+  {
+    "pr": "16215",
+    "channel": "global_phase",
+    "pre": "2.4.2",
+    "post": "2.5.0",
+    "output_oracle_blind": false,
+    "global_phase_delta": null,
+    "channel_diverges": false,
+    "retro_detected": false,
+    "result": "ok"
+  },
+  {
+    "pr": "16201",
+    "channel": "global_phase",
+    "pre": "2.4.2",
+    "post": "2.5.0",
+    "output_oracle_blind": false,
+    "global_phase_delta": null,
+    "channel_diverges": false,
+    "retro_detected": false,
+    "result": "ok"
+  }
+]

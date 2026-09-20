@@ -1,0 +1,35 @@
+[
+  {
+    "pr": "14603",
+    "channel": "contract_metadata",
+    "fix_sha": "96fda18888de4492f37ccdb93faf15dc014c99eb",
+    "parent_sha": "7c3890da097c851876b86453a1da6ee7d3208048",
+    "output_oracle_equivalent": true,
+    "output_oracle_strength": "exact",
+    "output_oracle_blind": true,
+    "divergence": "asymmetric_error",
+    "error_side": "bug",
+    "property_oracle_detects": true,
+    "invisible_confirmed": true,
+    "result": "ok"
+  },
+  {
+    "pr": "14919",
+    "channel": "contract_metadata",
+    "fix_sha": "dfcc5c6ce87fa424c8fd7abf22baba9e8750fa66",
+    "parent_sha": "14df5941a5915a2b517cdf9bc014a6838e752f92",
+    "output_oracle_equivalent": true,
+    "output_oracle_strength": "exact",
+    "output_oracle_blind": true,
+    "property_divergent_fields": [],
+    "property_oracle_detects": false,
+    "invisible_confirmed": false,
+    "result": "ok"
+  },
+  {
+    "pr": "14730",
+    "channel": "determinism",
+    "result": "exception",
+    "error": "TypeError: worker() missing 1 required keyword-only argument: 'isolated'"
+  }
+]

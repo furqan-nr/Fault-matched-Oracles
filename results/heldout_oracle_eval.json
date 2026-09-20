@@ -1,0 +1,1036 @@
+{
+  "summary": {
+    "specificity_runs": 54,
+    "false_positives": {
+      "contract": {
+        "fired": 0,
+        "of": 54
+      },
+      "mr1": {
+        "fired": 0,
+        "of": 27
+      },
+      "global_phase": {
+        "fired": 0,
+        "of": 54
+      }
+    },
+    "spurious_channel_detections_on_out_of_channel_mutants": 0,
+    "crash_family_visible_compilation_failures": 6,
+    "sensitivity_synthetic_phase": {
+      "runs": 6,
+      "output_blind": 6,
+      "phase_oracle_detected": 6
+    }
+  },
+  "rows": [
+    {
+      "kind": "real",
+      "family": "disable_optimization_loop",
+      "circuit": "ghz4",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "disable_optimization_loop",
+      "circuit": "qft4",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "disable_optimization_loop",
+      "circuit": "ghz5",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "disable_optimization_loop",
+      "circuit": "qft5",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "disable_optimization_loop",
+      "circuit": "ghz6",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "disable_optimization_loop",
+      "circuit": "qft6",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "drop_vf2_post_layout",
+      "circuit": "ghz4",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "drop_vf2_post_layout",
+      "circuit": "qft4",
+      "output_blind": false,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "drop_vf2_post_layout",
+      "circuit": "ghz5",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "drop_vf2_post_layout",
+      "circuit": "qft5",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "drop_vf2_post_layout",
+      "circuit": "ghz6",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "drop_vf2_post_layout",
+      "circuit": "qft6",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "downgrade_routing",
+      "circuit": "ghz4",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "downgrade_routing",
+      "circuit": "qft4",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "downgrade_routing",
+      "circuit": "ghz5",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "downgrade_routing",
+      "circuit": "qft5",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "downgrade_routing",
+      "circuit": "ghz6",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "downgrade_routing",
+      "circuit": "qft6",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "insert_redundant_cx_pair",
+      "circuit": "ghz4",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "insert_redundant_cx_pair",
+      "circuit": "qft4",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "insert_redundant_cx_pair",
+      "circuit": "ghz5",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "insert_redundant_cx_pair",
+      "circuit": "qft5",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "insert_redundant_cx_pair",
+      "circuit": "ghz6",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "insert_redundant_cx_pair",
+      "circuit": "qft6",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "drop_optimization_stage",
+      "circuit": "ghz4",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "drop_optimization_stage",
+      "circuit": "qft4",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "drop_optimization_stage",
+      "circuit": "ghz5",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "drop_optimization_stage",
+      "circuit": "qft5",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "drop_optimization_stage",
+      "circuit": "ghz6",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "drop_optimization_stage",
+      "circuit": "qft6",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "force_opt_level_1",
+      "circuit": "ghz4",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "force_opt_level_1",
+      "circuit": "qft4",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "force_opt_level_1",
+      "circuit": "ghz5",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "force_opt_level_1",
+      "circuit": "qft5",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "force_opt_level_1",
+      "circuit": "ghz6",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "force_opt_level_1",
+      "circuit": "qft6",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "force_opt_level_0",
+      "circuit": "ghz4",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "force_opt_level_0",
+      "circuit": "qft4",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "force_opt_level_0",
+      "circuit": "ghz5",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "force_opt_level_0",
+      "circuit": "qft5",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "force_opt_level_0",
+      "circuit": "ghz6",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "force_opt_level_0",
+      "circuit": "qft6",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "downgrade_layout_trivial",
+      "circuit": "ghz4",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "downgrade_layout_trivial",
+      "circuit": "qft4",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "downgrade_layout_trivial",
+      "circuit": "ghz5",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "downgrade_layout_trivial",
+      "circuit": "qft5",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "downgrade_layout_trivial",
+      "circuit": "ghz6",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "downgrade_layout_trivial",
+      "circuit": "qft6",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "insert_redundant_x_pair",
+      "circuit": "ghz4",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "insert_redundant_x_pair",
+      "circuit": "qft4",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "insert_redundant_x_pair",
+      "circuit": "ghz5",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "insert_redundant_x_pair",
+      "circuit": "qft5",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "insert_redundant_x_pair",
+      "circuit": "ghz6",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": false,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "insert_redundant_x_pair",
+      "circuit": "qft6",
+      "output_blind": true,
+      "matched_detected": false,
+      "detail": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      },
+      "baseline_fp": {
+        "contract": false,
+        "mr1": null,
+        "global_phase": false
+      }
+    },
+    {
+      "kind": "real",
+      "family": "incomplete_basis_translation",
+      "circuit": "ghz4",
+      "mutant_crashes": true,
+      "output_visible": "crash (compilation_failure)",
+      "matched_detected": null
+    },
+    {
+      "kind": "real",
+      "family": "incomplete_basis_translation",
+      "circuit": "qft4",
+      "mutant_crashes": true,
+      "output_visible": "crash (compilation_failure)",
+      "matched_detected": null
+    },
+    {
+      "kind": "real",
+      "family": "incomplete_basis_translation",
+      "circuit": "ghz5",
+      "mutant_crashes": true,
+      "output_visible": "crash (compilation_failure)",
+      "matched_detected": null
+    },
+    {
+      "kind": "real",
+      "family": "incomplete_basis_translation",
+      "circuit": "qft5",
+      "mutant_crashes": true,
+      "output_visible": "crash (compilation_failure)",
+      "matched_detected": null
+    },
+    {
+      "kind": "real",
+      "family": "incomplete_basis_translation",
+      "circuit": "ghz6",
+      "mutant_crashes": true,
+      "output_visible": "crash (compilation_failure)",
+      "matched_detected": null
+    },
+    {
+      "kind": "real",
+      "family": "incomplete_basis_translation",
+      "circuit": "qft6",
+      "mutant_crashes": true,
+      "output_visible": "crash (compilation_failure)",
+      "matched_detected": null
+    },
+    {
+      "kind": "synthetic_phase",
+      "circuit": "ghz4",
+      "output_blind": true,
+      "global_phase_detected": true,
+      "delta": -3.1416
+    },
+    {
+      "kind": "synthetic_phase",
+      "circuit": "qft4",
+      "output_blind": true,
+      "global_phase_detected": true,
+      "delta": -3.1416
+    },
+    {
+      "kind": "synthetic_phase",
+      "circuit": "ghz5",
+      "output_blind": true,
+      "global_phase_detected": true,
+      "delta": -3.1416
+    },
+    {
+      "kind": "synthetic_phase",
+      "circuit": "qft5",
+      "output_blind": true,
+      "global_phase_detected": true,
+      "delta": -3.1416
+    },
+    {
+      "kind": "synthetic_phase",
+      "circuit": "ghz6",
+      "output_blind": true,
+      "global_phase_detected": true,
+      "delta": -3.1416
+    },
+    {
+      "kind": "synthetic_phase",
+      "circuit": "qft6",
+      "output_blind": true,
+      "global_phase_detected": true,
+      "delta": 3.1416
+    }
+  ]
+}

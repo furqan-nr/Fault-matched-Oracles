@@ -1,0 +1,17 @@
+pr,coded_channel,coded_observable,tier,fix_location,regression_test_asserts_on,source_confirms,match
+14603,contract_metadata,no,oracle+diff,ElidePermutations virtual_permutation_layout,corrupted permutation property,contract_metadata,yes
+14919,contract_metadata,no,oracle+diff,routing final_layout composition,MR-1 permutation identity,contract_metadata,yes
+14956,global_phase,no,oracle+diff,CommutativeCancellation X->pi/2,global_phase = pi/2,global_phase,yes
+16201,global_phase,no,diff,UnrollForLoops unrolled_dag.global_phase=0,body global phase once per iteration,global_phase,yes
+16215,global_phase,no,diff,Commuting2qGateRouter accumulator.global_phase=0,routed.global_phase preserved,global_phase,yes
+16402,global_phase,no,diff,RZ/Phase/U1 2pi accumulation,global_phase accumulation,global_phase,yes
+15024,contract_metadata,no,diff,TranspileLayout register preservation,layout.initial_layout.get_registers,contract_metadata,yes
+14730,determinism,no,diff,VF2Layout single-qubit,deterministic transpile output (fixed seed),determinism,yes
+15040,determinism,no,diff,DAG converter edge order,high-degree-node determinism,determinism,yes
+16237,determinism,no,diff,ConsolidateBlocks basis selection,deterministic basis_gate choice,determinism,yes
+14765,output_semantic,yes,diff,Target instruction_supported,instruction_supported query (observable),output_semantic,yes
+13670,output_semantic,yes,diff-testread,commutation checker,asserts commute() result vs matrix reference,output_semantic,yes
+16337,output_semantic,yes,diff-testread,commutation checker CRZ,asserts Operator equality and inequality,output_semantic,yes
+15626,compilation_failure,yes,diff-testread,control-flow BreakLoopOp,transpile previously raised (assertIsNotNone),compilation_failure,yes
+15967,circuit_quality,yes,diff-testread,C transpiler instruction count,num_instructions 8 vs 7 at opt3,circuit_quality,yes
+14998,compilation_failure,yes,source-build,VF2PostLayout uncoupled qubit,buggy parent RAISES; fix returns [2 0 1],compilation_failure,yes

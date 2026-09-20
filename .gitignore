@@ -1,0 +1,41 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.DS_Store
+Thumbs.db
+
+# --- backups, scratch, generated previews (not needed for reproducibility) ---
+*_ORIG.*
+*_backup.*
+*.bak
+*.tmp
+*.log
+*~
+~$*
+
+# --- editor / OS / packaging junk ---
+.vscode/
+.idea/
+.pytest_cache/
+.mypy_cache/
+
+# --- throwaway venvs a reproducer may create locally ---
+.venv*/
+venv*/
+
+# --- manuscript, figures, and infrastructure for other/companion papers: NOT
+# part of this reproduction artifact (this repo is Paper 1B's oracle family
+# and verification evidence only) ---
+paper/
+diagrams/
+PAPER_1B.docx
+PAPER_1B.pdf
+build_1b.js
+COVER_LETTER_1B.docx
+build_cover_letter_1b.js
+SLR/
+tests/
+configs/
+pyproject.toml
+METHODOLOGY.md

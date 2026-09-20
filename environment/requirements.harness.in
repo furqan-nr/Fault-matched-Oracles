@@ -1,0 +1,30 @@
+# HARNESS-LAYER dependencies (INPUT spec, NOT the pinned lockfile).
+# The pinned environment/requirements.lock is generated in Environment Setup E1,
+# AFTER the release window is approved. Do not treat this file as the lock.
+#
+# Qiskit is intentionally ABSENT here: it is the system-under-test and is built
+# per event from source (see environment/events/<event_environment_id>.lock).
+#
+# Harness = test runner + benchpress deps + oracle/measurement + analysis stack.
+
+# Benchpress harness deps (from Qiskit/benchpress requirements.txt)
+pytest
+# pytest-memray / memray are Linux+macOS only (no Windows wheels). On Windows we rely on
+# tracemalloc-based peak-memory capture in the instrumentation harness instead.
+pytest-memray; platform_system != "Windows"
+wrapt_timeout_decorator
+packaging>=20
+
+# Numerics / data / config (NOT Qiskit; safe in the Qiskit-free harness)
+numpy
+scipy
+pandas
+pyyaml
+# NOTE: qiskit-aer is intentionally NOT here -- it depends on Qiskit and would pull a Qiskit
+# wheel into the harness. Oracle simulation (aer) lives in the anchor env and, in Phase 2, in
+# each per-event venv alongside that event's from-source Qiskit.
+
+# Build-from-source toolchain for per-event Qiskit (used by E3, documented here)
+setuptools-rust>=1.9
+# NOTE: a Rust toolchain (rustc/cargo) must be present on the build machine.
+# See RELEASE_WINDOW_DECISION.md for the MSRV required by the chosen window.

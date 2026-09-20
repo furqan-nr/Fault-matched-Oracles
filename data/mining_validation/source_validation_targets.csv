@@ -1,0 +1,12 @@
+pr,channel,fix_sha,parent_sha,trigger,family,n,backend,opt,isolated_pass
+14603,contract_metadata,96fda18888de4492f37ccdb93faf15dc014c99eb,7c3890da097c851876b86453a1da6ee7d3208048,trig-h1-elide-permutations,,,none,3,ElidePermutations
+14919,contract_metadata,dfcc5c6ce87fa424c8fd7abf22baba9e8750fa66,14df5941a5915a2b517cdf9bc014a6838e752f92,,qft,8,line,1,
+14730,determinism,d33ef5335e05523e35a29530dbc389c52c8e7bc7,056c6413b03a306b170bc18efb8fcf9cc1c8a3a5,,qft,8,line,1,
+15024,contract_metadata,bb100f83c76eaecccb9c2888799ea0b2895980a7,,,qft,8,line,1,
+16215,global_phase,be4c248ef729f4ae6721a7ca44238bd0f80a4a75,,,qft,8,line,1,
+16201,global_phase,2b4c81d4a8de182376eca71195474d86af7e7b33,,,qft,8,none,3,
+16402,global_phase,63a7f763de54d0b6b3076abe41f3a791153706a8,,,qft,8,none,3,
+14956,global_phase,1064921158bbb6457d43c72c4d1f0502537d1ca3,,trig-gp14956-cc-2pi,qft,8,none,3,CommutativeCancellation
+16237,determinism,3b9a64fdd4353834d83a6e393a76a2ee657800f2,,,qft,8,line,1,
+15040,determinism,25c3206f0b94c3e1a55e334a050a0d1fd144f996,,,qft,8,line,1,
+14765,contract_metadata,13263654143e625d23a395ca540b006a42dab4a2,,,qft,8,line,1,

@@ -1,0 +1,536 @@
+{
+  "schema": "selections/v1",
+  "tier": "pr",
+  "budget_s": 0.15,
+  "n_rows": 48,
+  "rows": [
+    {
+      "event_id": "mut-disable-opt-loop-01",
+      "baseline": "random",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "qft-n12-line-opt1",
+        "qaoa_linear-n5-line-opt3"
+      ]
+    },
+    {
+      "event_id": "mut-disable-opt-loop-01",
+      "baseline": "cheapest_first",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.10370969999949012,
+      "selected": [
+        "ghz-n8-line-opt1",
+        "ghz-n5-heavy_hex-opt1"
+      ]
+    },
+    {
+      "event_id": "mut-disable-opt-loop-01",
+      "baseline": "diversity_only",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.10370969999949012,
+      "selected": [
+        "ghz-n8-line-opt1",
+        "ghz-n5-heavy_hex-opt1"
+      ]
+    },
+    {
+      "event_id": "mut-disable-opt-loop-01",
+      "baseline": "history_only",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.10370969999949012,
+      "selected": [
+        "ghz-n8-line-opt1",
+        "ghz-n5-heavy_hex-opt1"
+      ]
+    },
+    {
+      "event_id": "mut-disable-opt-loop-01",
+      "baseline": "change_stage",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.10370969999949012,
+      "selected": [
+        "ghz-n8-line-opt1",
+        "ghz-n5-heavy_hex-opt1"
+      ]
+    },
+    {
+      "event_id": "mut-disable-opt-loop-01",
+      "baseline": "proposed",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "qft-n12-heavy_hex-opt3",
+        "qft-n12-line-opt3"
+      ]
+    },
+    {
+      "event_id": "mut-drop-vf2postlayout-01",
+      "baseline": "random",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "qft-n12-line-opt1",
+        "qaoa_linear-n5-line-opt3"
+      ]
+    },
+    {
+      "event_id": "mut-drop-vf2postlayout-01",
+      "baseline": "cheapest_first",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.10342240000009043,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n8-line-opt1"
+      ]
+    },
+    {
+      "event_id": "mut-drop-vf2postlayout-01",
+      "baseline": "diversity_only",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.10377260000004754,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n5-heavy_hex-opt1"
+      ]
+    },
+    {
+      "event_id": "mut-drop-vf2postlayout-01",
+      "baseline": "history_only",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.10342240000009043,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n8-line-opt1"
+      ]
+    },
+    {
+      "event_id": "mut-drop-vf2postlayout-01",
+      "baseline": "change_stage",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.10342240000009043,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n8-line-opt1"
+      ]
+    },
+    {
+      "event_id": "mut-drop-vf2postlayout-01",
+      "baseline": "proposed",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "qft-n12-heavy_hex-opt3",
+        "qft-n12-line-opt3"
+      ]
+    },
+    {
+      "event_id": "mut-downgrade-routing-01",
+      "baseline": "random",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "qft-n12-line-opt1",
+        "qaoa_linear-n5-line-opt3"
+      ]
+    },
+    {
+      "event_id": "mut-downgrade-routing-01",
+      "baseline": "cheapest_first",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.10374609999926179,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n5-heavy_hex-opt1"
+      ]
+    },
+    {
+      "event_id": "mut-downgrade-routing-01",
+      "baseline": "diversity_only",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.10374609999926179,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n5-heavy_hex-opt1"
+      ]
+    },
+    {
+      "event_id": "mut-downgrade-routing-01",
+      "baseline": "history_only",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.10374609999926179,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n5-heavy_hex-opt1"
+      ]
+    },
+    {
+      "event_id": "mut-downgrade-routing-01",
+      "baseline": "change_stage",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.10374609999926179,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n5-heavy_hex-opt1"
+      ]
+    },
+    {
+      "event_id": "mut-downgrade-routing-01",
+      "baseline": "proposed",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "qft-n12-heavy_hex-opt3",
+        "qft-n12-line-opt3"
+      ]
+    },
+    {
+      "event_id": "mut-insert-redundant-cx-01",
+      "baseline": "random",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "qft-n12-line-opt1",
+        "qaoa_linear-n5-line-opt3"
+      ]
+    },
+    {
+      "event_id": "mut-insert-redundant-cx-01",
+      "baseline": "cheapest_first",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.10320639999972628,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n8-line-opt1"
+      ]
+    },
+    {
+      "event_id": "mut-insert-redundant-cx-01",
+      "baseline": "diversity_only",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.10356009999995877,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n5-heavy_hex-opt1"
+      ]
+    },
+    {
+      "event_id": "mut-insert-redundant-cx-01",
+      "baseline": "history_only",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.10320639999972628,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n8-line-opt1"
+      ]
+    },
+    {
+      "event_id": "mut-insert-redundant-cx-01",
+      "baseline": "change_stage",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.10320639999972628,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n8-line-opt1"
+      ]
+    },
+    {
+      "event_id": "mut-insert-redundant-cx-01",
+      "baseline": "proposed",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "qft-n12-heavy_hex-opt3",
+        "qft-n12-line-opt3"
+      ]
+    },
+    {
+      "event_id": "hist-elide-permutations-mapping",
+      "baseline": "random",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "qft-n12-line-opt1",
+        "qaoa_linear-n5-line-opt3"
+      ]
+    },
+    {
+      "event_id": "hist-elide-permutations-mapping",
+      "baseline": "cheapest_first",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n5-line-opt3"
+      ]
+    },
+    {
+      "event_id": "hist-elide-permutations-mapping",
+      "baseline": "diversity_only",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n5-heavy_hex-opt1"
+      ]
+    },
+    {
+      "event_id": "hist-elide-permutations-mapping",
+      "baseline": "history_only",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n5-line-opt3"
+      ]
+    },
+    {
+      "event_id": "hist-elide-permutations-mapping",
+      "baseline": "change_stage",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n5-line-opt3"
+      ]
+    },
+    {
+      "event_id": "hist-elide-permutations-mapping",
+      "baseline": "proposed",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "qft-n12-heavy_hex-opt3",
+        "qft-n12-line-opt3"
+      ]
+    },
+    {
+      "event_id": "hist-vf2layout-nondeterminism",
+      "baseline": "random",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "qft-n12-line-opt1",
+        "qaoa_linear-n5-line-opt3"
+      ]
+    },
+    {
+      "event_id": "hist-vf2layout-nondeterminism",
+      "baseline": "cheapest_first",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n5-line-opt3"
+      ]
+    },
+    {
+      "event_id": "hist-vf2layout-nondeterminism",
+      "baseline": "diversity_only",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n5-heavy_hex-opt1"
+      ]
+    },
+    {
+      "event_id": "hist-vf2layout-nondeterminism",
+      "baseline": "history_only",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n5-line-opt3"
+      ]
+    },
+    {
+      "event_id": "hist-vf2layout-nondeterminism",
+      "baseline": "change_stage",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n5-line-opt3"
+      ]
+    },
+    {
+      "event_id": "hist-vf2layout-nondeterminism",
+      "baseline": "proposed",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "qft-n12-heavy_hex-opt3",
+        "qft-n12-line-opt3"
+      ]
+    },
+    {
+      "event_id": "hist-routing-permutation-multilayout",
+      "baseline": "random",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "qft-n12-line-opt1",
+        "qaoa_linear-n5-line-opt3"
+      ]
+    },
+    {
+      "event_id": "hist-routing-permutation-multilayout",
+      "baseline": "cheapest_first",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n5-line-opt3"
+      ]
+    },
+    {
+      "event_id": "hist-routing-permutation-multilayout",
+      "baseline": "diversity_only",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n5-heavy_hex-opt1"
+      ]
+    },
+    {
+      "event_id": "hist-routing-permutation-multilayout",
+      "baseline": "history_only",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n5-line-opt3"
+      ]
+    },
+    {
+      "event_id": "hist-routing-permutation-multilayout",
+      "baseline": "change_stage",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n5-line-opt3"
+      ]
+    },
+    {
+      "event_id": "hist-routing-permutation-multilayout",
+      "baseline": "proposed",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "qft-n12-heavy_hex-opt3",
+        "qft-n12-line-opt3"
+      ]
+    },
+    {
+      "event_id": "hist-vf2postlayout-noop",
+      "baseline": "random",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "qft-n12-line-opt1",
+        "qaoa_linear-n5-line-opt3"
+      ]
+    },
+    {
+      "event_id": "hist-vf2postlayout-noop",
+      "baseline": "cheapest_first",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n5-line-opt3"
+      ]
+    },
+    {
+      "event_id": "hist-vf2postlayout-noop",
+      "baseline": "diversity_only",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n5-heavy_hex-opt1"
+      ]
+    },
+    {
+      "event_id": "hist-vf2postlayout-noop",
+      "baseline": "history_only",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n5-line-opt3"
+      ]
+    },
+    {
+      "event_id": "hist-vf2postlayout-noop",
+      "baseline": "change_stage",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "ghz-n5-line-opt1",
+        "ghz-n5-line-opt3"
+      ]
+    },
+    {
+      "event_id": "hist-vf2postlayout-noop",
+      "baseline": "proposed",
+      "n_selected": 2,
+      "budget_s": 0.15,
+      "spent_s": 0.12000000000000001,
+      "selected": [
+        "qft-n12-heavy_hex-opt3",
+        "qft-n12-line-opt3"
+      ]
+    }
+  ]
+}

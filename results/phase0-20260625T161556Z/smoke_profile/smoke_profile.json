@@ -1,0 +1,227 @@
+{
+  "schema": "smoke_profile/v1",
+  "generated_utc": "2026-06-25T16:15:57.213549+00:00",
+  "qiskit_version": "2.4.2",
+  "python_version": "3.11.9",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "stage_map_anchor": "2.4.2",
+  "n_profiled": 6,
+  "rows": [
+    {
+      "test_id": "ghz-n5-line-opt1",
+      "declared_pass_stages": [
+        "analysis",
+        "layout",
+        "optimization",
+        "routing",
+        "translation"
+      ],
+      "executed_pass_stages": [
+        "analysis",
+        "translation",
+        "optimization",
+        "layout"
+      ],
+      "executed_not_declared": [],
+      "declared_not_executed": [
+        "routing"
+      ],
+      "transpilation_time_s": 0.004,
+      "peak_memory_mb": 0.17,
+      "n_executed_passes": 30,
+      "routing_observations": {
+        "swaps_inserted_estimate": 0,
+        "in_2q_gates": 4,
+        "out_2q_gates": 4,
+        "final_layout_present": true,
+        "out_op_counts": {
+          "cx": 4,
+          "rz": 2,
+          "sx": 1
+        }
+      },
+      "out_depth": 7,
+      "out_size": 7
+    },
+    {
+      "test_id": "ghz-n5-line-opt3",
+      "declared_pass_stages": [
+        "analysis",
+        "layout",
+        "optimization",
+        "routing",
+        "translation"
+      ],
+      "executed_pass_stages": [
+        "analysis",
+        "translation",
+        "optimization",
+        "layout"
+      ],
+      "executed_not_declared": [],
+      "declared_not_executed": [
+        "routing"
+      ],
+      "transpilation_time_s": 0.0035,
+      "peak_memory_mb": 0.07,
+      "n_executed_passes": 47,
+      "routing_observations": {
+        "swaps_inserted_estimate": 0,
+        "in_2q_gates": 4,
+        "out_2q_gates": 4,
+        "final_layout_present": true,
+        "out_op_counts": {
+          "cx": 4,
+          "rz": 2,
+          "sx": 1
+        }
+      },
+      "out_depth": 7,
+      "out_size": 7
+    },
+    {
+      "test_id": "ghz-n5-heavy_hex-opt1",
+      "declared_pass_stages": [
+        "analysis",
+        "layout",
+        "optimization",
+        "routing",
+        "translation"
+      ],
+      "executed_pass_stages": [
+        "analysis",
+        "translation",
+        "optimization",
+        "layout"
+      ],
+      "executed_not_declared": [],
+      "declared_not_executed": [
+        "routing"
+      ],
+      "transpilation_time_s": 0.0019,
+      "peak_memory_mb": 0.02,
+      "n_executed_passes": 31,
+      "routing_observations": {
+        "swaps_inserted_estimate": 0,
+        "in_2q_gates": 4,
+        "out_2q_gates": 4,
+        "final_layout_present": true,
+        "out_op_counts": {
+          "cx": 4,
+          "rz": 2,
+          "sx": 1
+        }
+      },
+      "out_depth": 7,
+      "out_size": 7
+    },
+    {
+      "test_id": "ghz-n5-heavy_hex-opt3",
+      "declared_pass_stages": [
+        "analysis",
+        "layout",
+        "optimization",
+        "routing",
+        "translation"
+      ],
+      "executed_pass_stages": [
+        "analysis",
+        "translation",
+        "optimization",
+        "layout"
+      ],
+      "executed_not_declared": [],
+      "declared_not_executed": [
+        "routing"
+      ],
+      "transpilation_time_s": 0.0025,
+      "peak_memory_mb": 0.02,
+      "n_executed_passes": 47,
+      "routing_observations": {
+        "swaps_inserted_estimate": 0,
+        "in_2q_gates": 4,
+        "out_2q_gates": 4,
+        "final_layout_present": true,
+        "out_op_counts": {
+          "cx": 4,
+          "rz": 2,
+          "sx": 1
+        }
+      },
+      "out_depth": 7,
+      "out_size": 7
+    },
+    {
+      "test_id": "ghz-n8-line-opt1",
+      "declared_pass_stages": [
+        "analysis",
+        "layout",
+        "optimization",
+        "routing",
+        "translation"
+      ],
+      "executed_pass_stages": [
+        "analysis",
+        "translation",
+        "optimization",
+        "layout"
+      ],
+      "executed_not_declared": [],
+      "declared_not_executed": [
+        "routing"
+      ],
+      "transpilation_time_s": 0.0015,
+      "peak_memory_mb": 0.01,
+      "n_executed_passes": 30,
+      "routing_observations": {
+        "swaps_inserted_estimate": 0,
+        "in_2q_gates": 7,
+        "out_2q_gates": 7,
+        "final_layout_present": true,
+        "out_op_counts": {
+          "cx": 7,
+          "rz": 2,
+          "sx": 1
+        }
+      },
+      "out_depth": 10,
+      "out_size": 10
+    },
+    {
+      "test_id": "ghz-n8-line-opt3",
+      "declared_pass_stages": [
+        "analysis",
+        "layout",
+        "optimization",
+        "routing",
+        "translation"
+      ],
+      "executed_pass_stages": [
+        "analysis",
+        "translation",
+        "optimization",
+        "layout"
+      ],
+      "executed_not_declared": [],
+      "declared_not_executed": [
+        "routing"
+      ],
+      "transpilation_time_s": 0.0021,
+      "peak_memory_mb": 0.02,
+      "n_executed_passes": 47,
+      "routing_observations": {
+        "swaps_inserted_estimate": 0,
+        "in_2q_gates": 7,
+        "out_2q_gates": 7,
+        "final_layout_present": true,
+        "out_op_counts": {
+          "cx": 7,
+          "rz": 2,
+          "sx": 1
+        }
+      },
+      "out_depth": 10,
+      "out_size": 10
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "global_phase_ccphase_16402/v1",
+  "event_id": "sv-16402-ccphase",
+  "pr": "16402",
+  "trigger": {
+    "circuit": "PhaseGate(pi/4); 15x t(0)",
+    "isolated_pass": "CommutativeCancellation",
+    "basis_gates": [
+      "p",
+      "t",
+      "rz",
+      "cx"
+    ]
+  },
+  "qiskit_version": {
+    "baseline": "2.6.0.dev0",
+    "candidate": "2.6.0.dev0"
+  },
+  "worker_status": {
+    "baseline": "ok",
+    "candidate": "ok"
+  },
+  "baseline": {
+    "global_phase": 0.0,
+    "gate_counts": {},
+    "output_equivalent": true
+  },
+  "candidate": {
+    "global_phase": 0.0,
+    "gate_counts": {},
+    "output_equivalent": true
+  },
+  "phase_differs": false,
+  "output_oracle_blind": true,
+  "fault_detected": false,
+  "verdict": "negative_here",
+  "note": "output blind but global_phase identical across builds -- the detector did not fire with basis_gates=[p,t,rz,cx]; try the RZGate/U1Gate variants of the same upstream test, or a different rep count from (7,15,23,31)"
+}

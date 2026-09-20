@@ -1,0 +1,49 @@
+{
+  "qiskit_version": "2.3.0.dev0",
+  "family": "qft",
+  "targeted": null,
+  "backend": "line",
+  "opt": 1,
+  "basis": [
+    "cx",
+    "rz",
+    "sx",
+    "x"
+  ],
+  "seed": 1234,
+  "transpile_time_s": 0.02065070008393377,
+  "cpu_time_s": 0.0,
+  "layout_props": {
+    "final_index_layout": [
+      6,
+      4,
+      7,
+      1,
+      0,
+      2,
+      3,
+      5
+    ],
+    "initial_index_layout": [
+      2,
+      1,
+      3,
+      0,
+      5,
+      4,
+      6,
+      7
+    ],
+    "routing_permutation": [
+      1,
+      4,
+      6,
+      7,
+      2,
+      0,
+      3,
+      5
+    ]
+  },
+  "status": "ok"
+}

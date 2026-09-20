@@ -1,0 +1,37 @@
+[
+  {
+    "pr": "14603",
+    "channel": "contract_metadata",
+    "fix_sha": "96fda18888de4492f37ccdb93faf15dc014c99eb",
+    "parent_sha": "7c3890da097c851876b86453a1da6ee7d3208048",
+    "property_divergent_fields": [],
+    "property_oracle_detects": false,
+    "output_oracle_equivalent": false,
+    "output_oracle_blind": false,
+    "invisible_confirmed": false,
+    "result": "ok"
+  },
+  {
+    "pr": "14919",
+    "channel": "contract_metadata",
+    "fix_sha": "dfcc5c6ce87fa424c8fd7abf22baba9e8750fa66",
+    "parent_sha": "14df5941a5915a2b517cdf9bc014a6838e752f92",
+    "property_divergent_fields": [],
+    "property_oracle_detects": false,
+    "output_oracle_equivalent": false,
+    "output_oracle_blind": false,
+    "invisible_confirmed": false,
+    "result": "ok"
+  },
+  {
+    "pr": "14730",
+    "channel": "determinism",
+    "fix_sha": "d33ef5335e05523e35a29530dbc389c52c8e7bc7",
+    "parent_sha": "056c6413b03a306b170bc18efb8fcf9cc1c8a3a5",
+    "property_oracle_detects": false,
+    "output_oracle_equivalent": false,
+    "output_oracle_blind": false,
+    "invisible_confirmed": false,
+    "result": "ok"
+  }
+]

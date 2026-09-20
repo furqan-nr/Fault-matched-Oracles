@@ -1,0 +1,34 @@
+{
+  "pr": "14730",
+  "good": "fb67762a4b92573bd4fbae050c975d8523430a12",
+  "bad": "056c6413b03a306b170bc18efb8fcf9cc1c8a3a5",
+  "oracle": "determinism",
+  "n_candidates": 54,
+  "probes": [
+    {
+      "sha": "1bc965505c40ac61b95f57338fe1fb5c5c590adc",
+      "verdict": "good"
+    },
+    {
+      "sha": "c31a9107f082e5ce57b5fbdee750c4917849ef6a",
+      "verdict": "good"
+    },
+    {
+      "sha": "2d73c6b2e1bac2b4779c8edc81f6db577fbab89b",
+      "verdict": "good"
+    },
+    {
+      "sha": "4b54dc97c6b7329e62aa328764defe99519a0741",
+      "verdict": "good"
+    },
+    {
+      "sha": "6b4477fe2e42047aba7babe4c834f0b22a946737",
+      "verdict": "good"
+    },
+    {
+      "sha": "056c6413b03a306b170bc18efb8fcf9cc1c8a3a5",
+      "verdict": "good"
+    }
+  ],
+  "introducing_commit": "056c6413b03a306b170bc18efb8fcf9cc1c8a3a5"
+}

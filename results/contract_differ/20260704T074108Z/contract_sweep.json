@@ -1,0 +1,20 @@
+{
+  "qiskit_version": "2.5.0",
+  "configs": 60,
+  "violations": 1,
+  "by_kind": {
+    "idempotence": 1
+  },
+  "elapsed_s": 1.0,
+  "items": [
+    {
+      "width": 6,
+      "depth": 8,
+      "opt": 3,
+      "cmap": "ring",
+      "seed": 17,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    }
+  ]
+}

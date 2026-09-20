@@ -1,0 +1,56 @@
+{
+  "qiskit_version": "2.4.2",
+  "configs": 675,
+  "violations": 5,
+  "by_kind": {
+    "idempotence": 5
+  },
+  "elapsed_s": 9.2,
+  "items": [
+    {
+      "width": 4,
+      "depth": 8,
+      "opt": 2,
+      "cmap": "ring",
+      "seed": 6,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 4,
+      "depth": 8,
+      "opt": 3,
+      "cmap": "ring",
+      "seed": 6,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 4,
+      "depth": 8,
+      "opt": 2,
+      "cmap": "ring",
+      "seed": 14,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 6,
+      "depth": 8,
+      "opt": 1,
+      "cmap": "ring",
+      "seed": 17,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    },
+    {
+      "width": 6,
+      "depth": 8,
+      "opt": 2,
+      "cmap": "ring",
+      "seed": 17,
+      "kind": "idempotence",
+      "detail": "metadata differs across identical fixed-seed transpilations"
+    }
+  ]
+}

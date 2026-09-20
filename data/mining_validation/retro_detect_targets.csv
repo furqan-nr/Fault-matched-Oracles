@@ -1,0 +1,7 @@
+pr,channel,pre_version,post_version,trigger,family,n,backend,opt,isolated_pass,wheel_bracketed
+14956,global_phase,2.1.0,2.2.0,trig-gp14956-cc-2pi,qft,5,none,3,CommutativeCancellation,no
+15040,determinism,2.2.0,2.3.0,,qft,8,line,1,,no
+15024,contract_metadata,2.2.0,2.3.0,,qft,8,line,1,,no
+16215,global_phase,2.4.2,2.5.0,,qft,6,ring,3,,no
+16201,global_phase,2.4.2,2.5.0,,qft,6,none,3,,no
+16237,determinism,2.4.2,2.5.0,,qft,8,ring,1,,no

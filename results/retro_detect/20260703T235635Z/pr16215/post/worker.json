@@ -1,0 +1,43 @@
+{
+  "qiskit_version": "2.5.0",
+  "family": "qft",
+  "targeted": null,
+  "backend": "ring",
+  "opt": 3,
+  "basis": [
+    "cx",
+    "rz",
+    "sx",
+    "x"
+  ],
+  "seed": 1234,
+  "transpile_time_s": 0.005419600056484342,
+  "cpu_time_s": 0.0,
+  "layout_props": {
+    "final_index_layout": [
+      0,
+      5,
+      4,
+      2,
+      3,
+      1
+    ],
+    "initial_index_layout": [
+      4,
+      5,
+      3,
+      0,
+      1,
+      2
+    ],
+    "routing_permutation": [
+      2,
+      3,
+      1,
+      4,
+      0,
+      5
+    ]
+  },
+  "status": "ok"
+}

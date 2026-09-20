@@ -1,0 +1,17 @@
+{
+  "qiskit_version": "2.2.0",
+  "family": "qft",
+  "targeted": null,
+  "backend": "line",
+  "opt": 1,
+  "basis": [
+    "cx",
+    "rz",
+    "sx",
+    "x"
+  ],
+  "seed": 1234,
+  "transpile_time_s": 0.0058521999744698405,
+  "cpu_time_s": 0.0,
+  "status": "ok"
+}

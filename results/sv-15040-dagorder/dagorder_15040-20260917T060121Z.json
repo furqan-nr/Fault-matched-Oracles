@@ -1,0 +1,46 @@
+{
+  "schema": "dag_order_15040/v1",
+  "event_id": "sv-15040-dagorder",
+  "pr": "15040",
+  "trigger": {
+    "circuit": "QuantumCircuit(100)",
+    "op": "apply_operation_back(Barrier(100))",
+    "compared_via": "DAGCircuit.structurally_equal"
+  },
+  "n_processes": 10,
+  "baseline": {
+    "structurally_equal_runs": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "mismatches": 0,
+    "n": 10
+  },
+  "candidate": {
+    "structurally_equal_runs": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "mismatches": 10,
+    "n": 10
+  },
+  "fault_detected": true,
+  "verdict": "positive",
+  "note": "fixed build: 0/10 mismatches; buggy parent: 10/10 mismatches -- the edge-order non-determinism reproduces on the buggy build and not on the fix. Report as its own case: the observable here is DAG-internal structure, not a downstream transpile() artifact like #14730/#16237"
+}

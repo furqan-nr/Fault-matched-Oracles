@@ -1,0 +1,2 @@
+pr,channel,result,output_oracle_blind,property_oracle_detects,invisible_confirmed,property_divergent_fields,global_phase_delta
+14939,contract_metadata,ok,True,False,False,[],

@@ -1,0 +1,150 @@
+{
+  "schema": "contract_register_15024/v1",
+  "event_id": "fwd-tlayout-registers-15024",
+  "pr": "15024",
+  "trigger": {
+    "registers": [
+      [
+        "alpha",
+        2
+      ],
+      [
+        "beta",
+        3
+      ]
+    ],
+    "backend": "line",
+    "opt": 1,
+    "seed": 1234
+  },
+  "qiskit_version": {
+    "baseline": "2.3.0.dev0",
+    "candidate": "2.3.0.dev0"
+  },
+  "worker_status": {
+    "baseline": "ok",
+    "candidate": "ok"
+  },
+  "baseline_signature": {
+    "input_registers": [
+      [
+        "alpha",
+        2
+      ],
+      [
+        "beta",
+        3
+      ]
+    ],
+    "output_qregs": [
+      [
+        "q",
+        5
+      ]
+    ],
+    "has_layout": true,
+    "virtual_bits_repr": [
+      "<Qubit register=(2, \"alpha\"), index=0>",
+      "<Qubit register=(2, \"alpha\"), index=1>",
+      "<Qubit register=(3, \"beta\"), index=0>",
+      "<Qubit register=(3, \"beta\"), index=1>",
+      "<Qubit register=(3, \"beta\"), index=2>"
+    ],
+    "virtual_bit_registers": [
+      [
+        "alpha",
+        0
+      ],
+      [
+        "alpha",
+        1
+      ],
+      [
+        "beta",
+        0
+      ],
+      [
+        "beta",
+        1
+      ],
+      [
+        "beta",
+        2
+      ]
+    ],
+    "input_qubit_mapping_repr": [
+      "<Qubit register=(2, \"alpha\"), index=0>",
+      "<Qubit register=(2, \"alpha\"), index=1>",
+      "<Qubit register=(3, \"beta\"), index=0>",
+      "<Qubit register=(3, \"beta\"), index=1>",
+      "<Qubit register=(3, \"beta\"), index=2>"
+    ],
+    "layout_repr": "TranspileLayout(initial_layout=Layout({\n4: <Qubit register=(2, \"alpha\"), index=0>,\n3: <Qubit register=(2, \"alpha\"), index=1>,\n2: <Qubit register=(3, \"beta\"), index=0>,\n0: <Qubit register=(3, \"beta\"), index=1>,\n1: <Qubit register=(3, \"beta\"), index=2>\n}), input_qubit_mapping={<Qubit register=(2, \"alpha\"), index=0>: 0, <Qubit register=(2, \"alpha\"), index=1>: 1, <Qubit register=(3, \"beta\"), index=0>: 2, <Qubit register=(3, \"beta\"), index=1>: 3, <Qubit register=(3, \"beta\"), index=2>: 4}, final_layout=Layout({\n4: <Qubit register=(5, \"q\"), index=4>,\n2: <Qubit register=(5, \"q\"), index=3>,\n0: <Qubit register=(5, \"q\"), index=2>,\n1: <Qubit register=(5, \"q\"), index=0>,\n3: <Qubit register=(5, \"q\"), index=1>\n}), _input_qubit_count=5, _output_qubit_list=[<Qubit register=(5, \"q\"), index=0>, <Qubit register=(5, \"q\"), index=1>, <Qubit register=(5, \"q\"), index=2>, <Qubit register=(5, \"q\"), index=3>, <Qubit register=(5, \"q\"), index=4>])"
+  },
+  "candidate_signature": {
+    "input_registers": [
+      [
+        "alpha",
+        2
+      ],
+      [
+        "beta",
+        3
+      ]
+    ],
+    "output_qregs": [
+      [
+        "q",
+        5
+      ]
+    ],
+    "has_layout": true,
+    "virtual_bits_repr": [
+      "<Qubit register=(2, \"alpha\"), index=0>",
+      "<Qubit register=(2, \"alpha\"), index=1>",
+      "<Qubit register=(3, \"beta\"), index=0>",
+      "<Qubit register=(3, \"beta\"), index=1>",
+      "<Qubit register=(3, \"beta\"), index=2>"
+    ],
+    "virtual_bit_registers": [
+      [
+        "alpha",
+        0
+      ],
+      [
+        "alpha",
+        1
+      ],
+      [
+        "beta",
+        0
+      ],
+      [
+        "beta",
+        1
+      ],
+      [
+        "beta",
+        2
+      ]
+    ],
+    "input_qubit_mapping_repr": [
+      "<Qubit register=(2, \"alpha\"), index=0>",
+      "<Qubit register=(2, \"alpha\"), index=1>",
+      "<Qubit register=(3, \"beta\"), index=0>",
+      "<Qubit register=(3, \"beta\"), index=1>",
+      "<Qubit register=(3, \"beta\"), index=2>"
+    ],
+    "layout_repr": "TranspileLayout(initial_layout=Layout({\n4: <Qubit register=(2, \"alpha\"), index=0>,\n3: <Qubit register=(2, \"alpha\"), index=1>,\n2: <Qubit register=(3, \"beta\"), index=0>,\n0: <Qubit register=(3, \"beta\"), index=1>,\n1: <Qubit register=(3, \"beta\"), index=2>\n}), input_qubit_mapping={<Qubit register=(2, \"alpha\"), index=0>: 0, <Qubit register=(2, \"alpha\"), index=1>: 1, <Qubit register=(3, \"beta\"), index=0>: 2, <Qubit register=(3, \"beta\"), index=1>: 3, <Qubit register=(3, \"beta\"), index=2>: 4}, final_layout=Layout({\n4: <Qubit register=(5, \"q\"), index=4>,\n2: <Qubit register=(5, \"q\"), index=3>,\n0: <Qubit register=(5, \"q\"), index=2>,\n1: <Qubit register=(5, \"q\"), index=0>,\n3: <Qubit register=(5, \"q\"), index=1>\n}), _input_qubit_count=5, _output_qubit_list=[<Qubit register=(5, \"q\"), index=0>, <Qubit register=(5, \"q\"), index=1>, <Qubit register=(5, \"q\"), index=2>, <Qubit register=(5, \"q\"), index=3>, <Qubit register=(5, \"q\"), index=4>])"
+  },
+  "output_equivalent": {
+    "baseline": true,
+    "candidate": true
+  },
+  "divergent_register_fields": [],
+  "register_diverges": false,
+  "output_oracle_blind": true,
+  "fault_detected": false,
+  "verdict": "negative_here",
+  "note": "output blind but register signature identical across builds \u2014 the detector does NOT fire at this boundary. Per the runbook gate: STOP; do not build the forward pair. Try a different --opt/--backend or enrich the register trigger before concluding"
+}

@@ -1,0 +1,46 @@
+{
+  "pr": "16215",
+  "good": "e64ec926e06e7103aac220d8bbf48e5a2bce9101",
+  "bad": "f2f85a9476e3a5c07321520bb90914d5e619ac3d",
+  "oracle": "global_phase",
+  "n_candidates": 338,
+  "probes": [
+    {
+      "sha": "31a2a1452dcf2b66ca42f567293217656d804a36",
+      "verdict": "good"
+    },
+    {
+      "sha": "230a09281b9fe4a65cfef7f22d838cfae4ed01a8",
+      "verdict": "good"
+    },
+    {
+      "sha": "b0459842b5b703f9e57df41f1ba409ff211fe2bb",
+      "verdict": "good"
+    },
+    {
+      "sha": "3379e0b3f0ea262be0cddd04efefd78ca568f118",
+      "verdict": "good"
+    },
+    {
+      "sha": "dcc06fb27069d8590982147ef3f85c820e0f2414",
+      "verdict": "good"
+    },
+    {
+      "sha": "26d7f00c104b3654f84e0cd2d5aa98dc356df46d",
+      "verdict": "good"
+    },
+    {
+      "sha": "b2b62d112388a01c0d012319d3fbd2a4f7fc7d1b",
+      "verdict": "good"
+    },
+    {
+      "sha": "a241dd19a81e8e0fa7a6836a1db6c2de5e6646e6",
+      "verdict": "good"
+    },
+    {
+      "sha": "f2f85a9476e3a5c07321520bb90914d5e619ac3d",
+      "verdict": "good"
+    }
+  ],
+  "introducing_commit": "f2f85a9476e3a5c07321520bb90914d5e619ac3d"
+}

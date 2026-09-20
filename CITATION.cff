@@ -1,0 +1,62 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software (metadata below) and the accompanying paper (see preferred-citation)."
+title: "Fault-Class-Matched Test Oracles for Output-Invisible Quantum Transpiler Regressions (fault-matched-oracles)"
+version: "1.0.0"
+date-released: "2026-09-20"
+license: MIT
+type: software
+repository-code: "https://github.com/furqan-nr/quantum-oracles"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.PENDING"
+    description: "Archived software/data release (GitHub release tag v1.0.0), Zenodo. DOI to be minted on first release — update this value once Zenodo assigns it."
+keywords:
+  - quantum software engineering
+  - quantum transpiler
+  - test oracle
+  - metamorphic testing
+  - mutation testing
+  - regression testing
+  - Qiskit
+  - quantum circuit equivalence checking
+abstract: >-
+  This archive holds the oracle implementations, verification scripts, and evidence behind a paper
+  on fault-class-matched test oracles for quantum transpiler regressions. A companion empirical
+  study finds that roughly 28% of merged Qiskit transpiler bug-fixes repair a fault that corrupts
+  layout/permutation metadata, global phase, or run-to-run determinism while the executed output
+  stays correct, invisible to a standard output-equivalence oracle by construction. This paper
+  introduces a matched oracle family, a layout/permutation contract checker and a contract-level
+  metamorphic relation for the metadata channel, a global-phase tracker for the phase channel, and
+  a determinism runner for the reproducibility channel, and verifies it from source on nine real,
+  merged Qiskit transpiler regressions (three per channel), on synthetic mutant families built to
+  each channel's own invariant, and on a native port of the global-phase mechanism to pytket/tket.
+  The archive includes every verification script, the oracle source code, the already-executed
+  result files each reported number traces to, and the environment/build protocol needed to
+  rebuild any of it from source.
+authors:
+  - family-names: Nasir
+    given-names: Furqan
+    orcid: "https://orcid.org/0000-0002-5259-3448"
+    affiliation: "City University of Science and Information Technology (CUSIT), Peshawar, Pakistan"
+  - family-names: Shah
+    given-names: Arif
+    orcid: "https://orcid.org/0000-0003-0090-3333"
+    affiliation: "City University of Science and Information Technology (CUSIT), Peshawar, Pakistan"
+  - family-names: Alam
+    given-names: Iftikhar
+    affiliation: "City University of Science and Information Technology (CUSIT), Peshawar, Pakistan"
+preferred-citation:
+  type: article
+  title: "Fault-Class-Matched Test Oracles for Output-Invisible Quantum Transpiler Regressions"
+  authors:
+    - family-names: Nasir
+      given-names: Furqan
+      orcid: "https://orcid.org/0000-0002-5259-3448"
+    - family-names: Shah
+      given-names: Arif
+      orcid: "https://orcid.org/0000-0003-0090-3333"
+    - family-names: Alam
+      given-names: Iftikhar
+  journal: "Software Testing, Verification and Reliability"
+  year: 2026
+  notes: "Wiley. Status: manuscript prepared for submission; add volume, pages, and DOI on acceptance."

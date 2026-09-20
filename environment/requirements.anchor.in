@@ -1,0 +1,12 @@
+# ANCHOR / DEV environment = harness deps + the anchor Qiskit wheel.
+# This is where Phase 0 (manifest + smoke profile), the unit tests, and the statevector
+# feasibility check run -- they all need *a* Qiskit to execute against, and the anchor
+# (2.4.2) is the reference build for the study.
+#
+# This does NOT violate the two-layer model (METHODOLOGY §0.1): the per-event measurements
+# in Phase 2 still use Qiskit built FROM SOURCE per event (build_qiskit_event). The anchor
+# wheel here is only the development/CI reference.
+
+-r requirements.harness.in
+qiskit==2.4.2
+qiskit-aer        # oracle simulation (sampled/observable checks); depends on qiskit

@@ -1,0 +1,326 @@
+{
+  "summary": {
+    "global_phase_channel": {
+      "mutants": 36,
+      "detected_and_blind": 36,
+      "sensitivity": 1.0,
+      "sensitivity_wilson95": [
+        0.904,
+        1
+      ],
+      "median_oracle_ms": 17.61,
+      "peak_memory_kb": 383.4
+    },
+    "specificity_all_channels": {
+      "clean_runs": 15,
+      "false_positives": 0,
+      "specificity": 1.0,
+      "specificity_wilson95": [
+        0.796,
+        1
+      ]
+    },
+    "contract_metadata_channel": {
+      "note": "sensitivity from 2 source-verified real fixes",
+      "detected": 2,
+      "of": 2,
+      "fixes": [
+        "#14603 (contract differ)",
+        "#14919 (MR-1)"
+      ]
+    },
+    "determinism_channel": {
+      "note": "reproduced separately under a noise-scored target; see scripts/determinism_eval.py and results/determinism_eval.json"
+    }
+  },
+  "rows": [
+    {
+      "circuit": "ghz4",
+      "delta": 3.1416,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 6.04,
+      "peak_kb": 41.6
+    },
+    {
+      "circuit": "ghz4",
+      "delta": 1.5708,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 5.46,
+      "peak_kb": 41.7
+    },
+    {
+      "circuit": "ghz4",
+      "delta": 1.0472,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 5.63,
+      "peak_kb": 42.6
+    },
+    {
+      "circuit": "ghz4",
+      "delta": 0.8976,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 5.57,
+      "peak_kb": 36.7
+    },
+    {
+      "circuit": "ghz4",
+      "delta": 0.3,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 5.35,
+      "peak_kb": 41.7
+    },
+    {
+      "circuit": "ghz4",
+      "delta": 1.0,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 5.57,
+      "peak_kb": 41.7
+    },
+    {
+      "circuit": "qft4",
+      "delta": 3.1416,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 25.58,
+      "peak_kb": 51.1
+    },
+    {
+      "circuit": "qft4",
+      "delta": 1.5708,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 26.72,
+      "peak_kb": 51.0
+    },
+    {
+      "circuit": "qft4",
+      "delta": 1.0472,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 26.59,
+      "peak_kb": 51.5
+    },
+    {
+      "circuit": "qft4",
+      "delta": 0.8976,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 26.66,
+      "peak_kb": 52.4
+    },
+    {
+      "circuit": "qft4",
+      "delta": 0.3,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 26.91,
+      "peak_kb": 52.3
+    },
+    {
+      "circuit": "qft4",
+      "delta": 1.0,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 26.35,
+      "peak_kb": 50.8
+    },
+    {
+      "circuit": "ghz5",
+      "delta": 3.1416,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 6.42,
+      "peak_kb": 108.1
+    },
+    {
+      "circuit": "ghz5",
+      "delta": 1.5708,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 6.41,
+      "peak_kb": 108.3
+    },
+    {
+      "circuit": "ghz5",
+      "delta": 1.0472,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 6.4,
+      "peak_kb": 108.2
+    },
+    {
+      "circuit": "ghz5",
+      "delta": 0.8976,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 6.64,
+      "peak_kb": 108.4
+    },
+    {
+      "circuit": "ghz5",
+      "delta": 0.3,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 6.85,
+      "peak_kb": 109.1
+    },
+    {
+      "circuit": "ghz5",
+      "delta": 1.0,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 6.85,
+      "peak_kb": 109.2
+    },
+    {
+      "circuit": "qft5",
+      "delta": 3.1416,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 43.59,
+      "peak_kb": 117.3
+    },
+    {
+      "circuit": "qft5",
+      "delta": 1.5708,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 43.29,
+      "peak_kb": 117.3
+    },
+    {
+      "circuit": "qft5",
+      "delta": 1.0472,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 45.95,
+      "peak_kb": 118.0
+    },
+    {
+      "circuit": "qft5",
+      "delta": 0.8976,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 50.77,
+      "peak_kb": 119.0
+    },
+    {
+      "circuit": "qft5",
+      "delta": 0.3,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 49.24,
+      "peak_kb": 118.9
+    },
+    {
+      "circuit": "qft5",
+      "delta": 1.0,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 47.76,
+      "peak_kb": 117.5
+    },
+    {
+      "circuit": "ghz6",
+      "delta": 3.1416,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 9.43,
+      "peak_kb": 372.3
+    },
+    {
+      "circuit": "ghz6",
+      "delta": 1.5708,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 8.92,
+      "peak_kb": 372.4
+    },
+    {
+      "circuit": "ghz6",
+      "delta": 1.0472,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 8.52,
+      "peak_kb": 372.3
+    },
+    {
+      "circuit": "ghz6",
+      "delta": 0.8976,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 9.08,
+      "peak_kb": 372.5
+    },
+    {
+      "circuit": "ghz6",
+      "delta": 0.3,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 9.4,
+      "peak_kb": 373.3
+    },
+    {
+      "circuit": "ghz6",
+      "delta": 1.0,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 9.64,
+      "peak_kb": 373.3
+    },
+    {
+      "circuit": "qft6",
+      "delta": 3.1416,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 76.82,
+      "peak_kb": 381.8
+    },
+    {
+      "circuit": "qft6",
+      "delta": 1.5708,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 74.42,
+      "peak_kb": 381.8
+    },
+    {
+      "circuit": "qft6",
+      "delta": 1.0472,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 73.46,
+      "peak_kb": 382.4
+    },
+    {
+      "circuit": "qft6",
+      "delta": 0.8976,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 73.28,
+      "peak_kb": 383.4
+    },
+    {
+      "circuit": "qft6",
+      "delta": 0.3,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 72.62,
+      "peak_kb": 383.2
+    },
+    {
+      "circuit": "qft6",
+      "delta": 1.0,
+      "detected": true,
+      "output_blind": true,
+      "oracle_ms": 71.88,
+      "peak_kb": 381.9
+    }
+  ]
+}

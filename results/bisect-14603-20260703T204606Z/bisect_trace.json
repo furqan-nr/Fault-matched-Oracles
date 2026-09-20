@@ -1,0 +1,34 @@
+{
+  "pr": "14603",
+  "good": "411fa46fd775ff07085aff77970b68e52da5919a",
+  "bad": "7c3890da097c851876b86453a1da6ee7d3208048",
+  "oracle": "contract",
+  "n_candidates": 239,
+  "probes": [
+    {
+      "sha": "bb1f5c88a392414f5f0c11c7fbcea31160be7c86",
+      "verdict": "skip"
+    },
+    {
+      "sha": "5d8d4cb3564508dda4a141383905f7a3924b6ecd",
+      "verdict": "skip"
+    },
+    {
+      "sha": "bf828a77b4b8819983e0ba334784ec1d5136d1e9",
+      "verdict": "skip"
+    },
+    {
+      "sha": "9104dc4505303f29da448fc6b501e3baff99cca6",
+      "verdict": "skip"
+    },
+    {
+      "sha": "7c04a47303e5dec8a6caaaefd6b54e3fb2583924",
+      "verdict": "skip"
+    },
+    {
+      "sha": "f367f9a2dcc6b6c451a1c9e9e9e1e40868ea0527",
+      "verdict": "skip"
+    }
+  ],
+  "introducing_commit": "7c3890da097c851876b86453a1da6ee7d3208048"
+}

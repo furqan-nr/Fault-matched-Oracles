@@ -1,0 +1,38 @@
+{
+  "fix": {
+    "ryy,rzz": [
+      "rzz",
+      "rzz",
+      "rzz",
+      "rzz",
+      "rzz",
+      "rzz"
+    ],
+    "ecr,cx,cz": [
+      "cz",
+      "cz",
+      "cz",
+      "cz",
+      "cz",
+      "cz"
+    ]
+  },
+  "parent": {
+    "ryy,rzz": [
+      "rzz",
+      "ryy",
+      "ryy",
+      "ryy",
+      "rzz",
+      "ryy"
+    ],
+    "ecr,cx,cz": [
+      "cz",
+      "ecr",
+      "ecr",
+      "cz",
+      "cz",
+      "ecr"
+    ]
+  }
+}

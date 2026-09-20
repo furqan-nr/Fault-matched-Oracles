@@ -1,0 +1,343 @@
+{
+  "summary": {
+    "sdk": "pytket",
+    "mutants": 36,
+    "detected_and_blind": 36,
+    "sensitivity": 1.0,
+    "clean_runs": 6,
+    "false_positives": 0,
+    "specificity": 1.0
+  },
+  "rows": [
+    {
+      "circuit": "ghz4",
+      "delta": 0.0,
+      "clean_baseline": true,
+      "detected": false,
+      "note": null
+    },
+    {
+      "circuit": "ghz4",
+      "delta": 3.1416,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": -3.141592653589793
+    },
+    {
+      "circuit": "ghz4",
+      "delta": 1.5708,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 1.5707963267948966
+    },
+    {
+      "circuit": "ghz4",
+      "delta": 1.0472,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 1.0471975511965974
+    },
+    {
+      "circuit": "ghz4",
+      "delta": 0.8976,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 0.8975979010256552
+    },
+    {
+      "circuit": "ghz4",
+      "delta": 0.3,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 0.2999999999999998
+    },
+    {
+      "circuit": "ghz4",
+      "delta": 1.0,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 1.0
+    },
+    {
+      "circuit": "qft4",
+      "delta": 0.0,
+      "clean_baseline": true,
+      "detected": false,
+      "note": null
+    },
+    {
+      "circuit": "qft4",
+      "delta": 3.1416,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": -3.141592653589793
+    },
+    {
+      "circuit": "qft4",
+      "delta": 1.5708,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 1.5707963267948966
+    },
+    {
+      "circuit": "qft4",
+      "delta": 1.0472,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 1.0471975511965974
+    },
+    {
+      "circuit": "qft4",
+      "delta": 0.8976,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 0.8975979010256552
+    },
+    {
+      "circuit": "qft4",
+      "delta": 0.3,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 0.2999999999999998
+    },
+    {
+      "circuit": "qft4",
+      "delta": 1.0,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 1.0
+    },
+    {
+      "circuit": "ghz5",
+      "delta": 0.0,
+      "clean_baseline": true,
+      "detected": false,
+      "note": null
+    },
+    {
+      "circuit": "ghz5",
+      "delta": 3.1416,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": -3.141592653589793
+    },
+    {
+      "circuit": "ghz5",
+      "delta": 1.5708,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 1.5707963267948966
+    },
+    {
+      "circuit": "ghz5",
+      "delta": 1.0472,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 1.0471975511965983
+    },
+    {
+      "circuit": "ghz5",
+      "delta": 0.8976,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 0.8975979010256552
+    },
+    {
+      "circuit": "ghz5",
+      "delta": 0.3,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 0.2999999999999998
+    },
+    {
+      "circuit": "ghz5",
+      "delta": 1.0,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 1.0
+    },
+    {
+      "circuit": "qft5",
+      "delta": 0.0,
+      "clean_baseline": true,
+      "detected": false,
+      "note": null
+    },
+    {
+      "circuit": "qft5",
+      "delta": 3.1416,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": -3.141592653589793
+    },
+    {
+      "circuit": "qft5",
+      "delta": 1.5708,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 1.5707963267948966
+    },
+    {
+      "circuit": "qft5",
+      "delta": 1.0472,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 1.0471975511965974
+    },
+    {
+      "circuit": "qft5",
+      "delta": 0.8976,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 0.8975979010256552
+    },
+    {
+      "circuit": "qft5",
+      "delta": 0.3,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 0.2999999999999998
+    },
+    {
+      "circuit": "qft5",
+      "delta": 1.0,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 1.0
+    },
+    {
+      "circuit": "ghz6",
+      "delta": 0.0,
+      "clean_baseline": true,
+      "detected": false,
+      "note": null
+    },
+    {
+      "circuit": "ghz6",
+      "delta": 3.1416,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": -3.141592653589793
+    },
+    {
+      "circuit": "ghz6",
+      "delta": 1.5708,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 1.5707963267948966
+    },
+    {
+      "circuit": "ghz6",
+      "delta": 1.0472,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 1.0471975511965983
+    },
+    {
+      "circuit": "ghz6",
+      "delta": 0.8976,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 0.8975979010256552
+    },
+    {
+      "circuit": "ghz6",
+      "delta": 0.3,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 0.2999999999999998
+    },
+    {
+      "circuit": "ghz6",
+      "delta": 1.0,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 1.0
+    },
+    {
+      "circuit": "qft6",
+      "delta": 0.0,
+      "clean_baseline": true,
+      "detected": false,
+      "note": null
+    },
+    {
+      "circuit": "qft6",
+      "delta": 3.1416,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": -3.141592653589793
+    },
+    {
+      "circuit": "qft6",
+      "delta": 1.5708,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 1.5707963267948966
+    },
+    {
+      "circuit": "qft6",
+      "delta": 1.0472,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 1.0471975511965983
+    },
+    {
+      "circuit": "qft6",
+      "delta": 0.8976,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 0.8975979010256552
+    },
+    {
+      "circuit": "qft6",
+      "delta": 0.3,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 0.2999999999999998
+    },
+    {
+      "circuit": "qft6",
+      "delta": 1.0,
+      "clean_baseline": false,
+      "detected": true,
+      "output_blind": true,
+      "recovered_delta": 1.0
+    }
+  ]
+}

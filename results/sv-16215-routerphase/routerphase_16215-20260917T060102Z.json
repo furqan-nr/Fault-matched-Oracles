@@ -1,0 +1,30 @@
+{
+  "schema": "global_phase_routerphase_16215/v1",
+  "event_id": "sv-16215-routerphase",
+  "pr": "16215",
+  "trigger": {
+    "circuit": "QuantumCircuit(4, global_phase=0.3); h(0); cx(0,1)",
+    "pass": "Commuting2qGateRouter(SwapStrategy.from_line([0,1,2,3]))"
+  },
+  "qiskit_version": {
+    "baseline": "2.5.0.dev0",
+    "candidate": "2.5.0.dev0"
+  },
+  "worker_status": {
+    "baseline": "ok",
+    "candidate": "ok"
+  },
+  "baseline": {
+    "global_phase": 0.3,
+    "output_equivalent": true
+  },
+  "candidate": {
+    "global_phase": 0.6,
+    "output_equivalent": true
+  },
+  "phase_differs": true,
+  "output_oracle_blind": true,
+  "fault_detected": true,
+  "verdict": "positive",
+  "note": "global_phase diverges between builds while the output oracle stays blind -- the #16215 global-phase fault is reproduced"
+}

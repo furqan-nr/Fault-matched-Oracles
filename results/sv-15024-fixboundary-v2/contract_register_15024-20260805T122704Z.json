@@ -1,0 +1,252 @@
+{
+  "schema": "contract_register_15024/v1",
+  "event_id": "fwd-tlayout-registers-15024",
+  "pr": "15024",
+  "trigger": {
+    "registers": [
+      [
+        "a",
+        2,
+        "QuantumRegister"
+      ],
+      [
+        "b",
+        1,
+        "AncillaRegister"
+      ]
+    ],
+    "circuit": "QuantumCircuit(b, a); x(0)",
+    "initial_layout": [
+      0,
+      1,
+      2
+    ],
+    "opt_levels": "0,1,2,3",
+    "observable": "initial_layout.get_registers()"
+  },
+  "qiskit_version": {
+    "baseline": "2.3.0.dev0",
+    "candidate": "2.3.0.dev0"
+  },
+  "worker_status": {
+    "baseline": "ok",
+    "candidate": "ok"
+  },
+  "baseline_signature": {
+    "0": {
+      "get_registers": [
+        [
+          "a",
+          2,
+          "QuantumRegister"
+        ],
+        [
+          "b",
+          1,
+          "AncillaRegister"
+        ]
+      ],
+      "virtual_bit_registers": [
+        [
+          "a",
+          0
+        ],
+        [
+          "a",
+          1
+        ],
+        [
+          "b",
+          0
+        ]
+      ],
+      "output_equivalent": true
+    },
+    "1": {
+      "get_registers": [
+        [
+          "a",
+          2,
+          "QuantumRegister"
+        ],
+        [
+          "b",
+          1,
+          "AncillaRegister"
+        ]
+      ],
+      "virtual_bit_registers": [
+        [
+          "a",
+          0
+        ],
+        [
+          "a",
+          1
+        ],
+        [
+          "b",
+          0
+        ]
+      ],
+      "output_equivalent": true
+    },
+    "2": {
+      "get_registers": [
+        [
+          "a",
+          2,
+          "QuantumRegister"
+        ],
+        [
+          "b",
+          1,
+          "AncillaRegister"
+        ]
+      ],
+      "virtual_bit_registers": [
+        [
+          "a",
+          0
+        ],
+        [
+          "a",
+          1
+        ],
+        [
+          "b",
+          0
+        ]
+      ],
+      "output_equivalent": true
+    },
+    "3": {
+      "get_registers": [
+        [
+          "a",
+          2,
+          "QuantumRegister"
+        ],
+        [
+          "b",
+          1,
+          "AncillaRegister"
+        ]
+      ],
+      "virtual_bit_registers": [
+        [
+          "a",
+          0
+        ],
+        [
+          "a",
+          1
+        ],
+        [
+          "b",
+          0
+        ]
+      ],
+      "output_equivalent": true
+    }
+  },
+  "candidate_signature": {
+    "0": {
+      "get_registers": [],
+      "virtual_bit_registers": [
+        [
+          "a",
+          0
+        ],
+        [
+          "a",
+          1
+        ],
+        [
+          "b",
+          0
+        ]
+      ],
+      "output_equivalent": true
+    },
+    "1": {
+      "get_registers": [],
+      "virtual_bit_registers": [
+        [
+          "a",
+          0
+        ],
+        [
+          "a",
+          1
+        ],
+        [
+          "b",
+          0
+        ]
+      ],
+      "output_equivalent": true
+    },
+    "2": {
+      "get_registers": [],
+      "virtual_bit_registers": [
+        [
+          "a",
+          0
+        ],
+        [
+          "a",
+          1
+        ],
+        [
+          "b",
+          0
+        ]
+      ],
+      "output_equivalent": true
+    },
+    "3": {
+      "get_registers": [],
+      "virtual_bit_registers": [
+        [
+          "a",
+          0
+        ],
+        [
+          "a",
+          1
+        ],
+        [
+          "b",
+          0
+        ]
+      ],
+      "output_equivalent": true
+    }
+  },
+  "output_equivalent": {
+    "baseline": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": true
+    },
+    "candidate": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": true
+    }
+  },
+  "divergent_register_fields": [
+    "opt0",
+    "opt1",
+    "opt2",
+    "opt3"
+  ],
+  "register_diverges": true,
+  "output_oracle_blind": true,
+  "fault_detected": true,
+  "verdict": "positive",
+  "note": "initial_layout.get_registers() diverges between builds while the output oracle stays blind \u2014 the #15024 contract fault is reproduced (promotable at the forward boundary)"
+}

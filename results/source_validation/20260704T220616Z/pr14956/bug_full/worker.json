@@ -1,0 +1,18 @@
+{
+  "qiskit_version": "2.2.0",
+  "family": null,
+  "targeted": "trig-gp14956-cc-2pi",
+  "backend": "none",
+  "opt": 3,
+  "basis": [
+    "cx",
+    "rz",
+    "sx",
+    "x"
+  ],
+  "seed": 1234,
+  "transpile_time_s": 0.0012428999179974198,
+  "cpu_time_s": 0.0,
+  "layout_props": {},
+  "status": "ok"
+}
