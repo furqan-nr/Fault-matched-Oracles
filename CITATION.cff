@@ -5,11 +5,11 @@ version: "1.0.0"
 date-released: "2026-09-20"
 license: MIT
 type: software
-repository-code: "https://github.com/furqan-nr/quantum-oracles"
+repository-code: "https://github.com/furqan-nr/Fault-matched-Oracles"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.PENDING"
-    description: "Archived software/data release (GitHub release tag v1.0.0), Zenodo. DOI to be minted on first release — update this value once Zenodo assigns it."
+    value: "10.5281/zenodo.22855185"
+    description: "Archived software/data release (GitHub release tag v1.0.0), Zenodo."
 keywords:
   - quantum software engineering
   - quantum transpiler

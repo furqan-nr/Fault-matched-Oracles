@@ -6,8 +6,8 @@ Verification and Reliability*, Wiley). This repository holds the oracle implemen
 verification and evaluation script, the already-executed evidence each reported number traces to,
 and the environment/build protocol needed to rebuild any of it from source.
 
-- **Repository:** https://github.com/furqan-nr/quantum-oracles *(confirm/rename before pushing)*
-- **Archive (DOI):** `10.5281/zenodo.PENDING` — to be minted from the first GitHub release
+- **Repository:** https://github.com/furqan-nr/Fault-matched-Oracles
+- **Archive (DOI):** [10.5281/zenodo.22855185](https://doi.org/10.5281/zenodo.22855185)
 - **License:** MIT (see `LICENSE`)
 
 This is a **companion, independent artifact** to the empirical prevalence study behind it

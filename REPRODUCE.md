@@ -4,8 +4,8 @@ This archive accompanies the manuscript **"Fault-Class-Matched Test Oracles for 
 Quantum Transpiler Regressions"** (Nasir, Shah, Alam; prepared for submission to *Software Testing,
 Verification and Reliability*, Wiley).
 
-- Repository: https://github.com/furqan-nr/quantum-oracles *(confirm/rename before pushing)*
-- Archive (DOI): `10.5281/zenodo.PENDING` — to be minted from the first GitHub release
+- Repository: https://github.com/furqan-nr/Fault-matched-Oracles
+- Archive (DOI): [10.5281/zenodo.22855185](https://doi.org/10.5281/zenodo.22855185)
 - License: MIT (see `LICENSE`)
 
 This repository is the reproduction artifact only; the manuscript and its figures are maintained
