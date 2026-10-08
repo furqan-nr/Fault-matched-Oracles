@@ -5,7 +5,7 @@ Quantum Transpiler Faults"** (Nasir, Shah, Alam; prepared for submission to *ACM
 Quantum Computing*).
 
 - Repository: https://github.com/furqan-nr/Fault-matched-Oracles
-- Archive (DOI): [10.5281/zenodo.23241990](https://doi.org/10.5281/zenodo.23241990)
+- Archive (DOI): [10.5281/zenodo.23245090](https://doi.org/10.5281/zenodo.23245090)
 - License: MIT (see `LICENSE`)
 
 This repository is the reproduction artifact only; the manuscript and its figures are maintained
