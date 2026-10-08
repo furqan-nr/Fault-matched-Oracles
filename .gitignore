@@ -39,3 +39,6 @@ tests/
 configs/
 pyproject.toml
 METHODOLOGY.md
+
+# --- from-source Qiskit build trees (large; rebuilt locally, not archived) ---
+environment/_builds/

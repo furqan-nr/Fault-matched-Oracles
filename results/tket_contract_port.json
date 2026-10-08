@@ -1,0 +1,664 @@
+{
+  "summary": {
+    "sdk": "pytket",
+    "mechanism": "contract/permutation metadata checker",
+    "mutants": 62,
+    "detected_and_blind": 62,
+    "sensitivity": 1.0,
+    "clean_runs": 6,
+    "false_positives": 0,
+    "specificity": 1.0
+  },
+  "rows": [
+    {
+      "circuit": "ghz4",
+      "kind": "clean",
+      "contract_fired": false
+    },
+    {
+      "circuit": "ghz4",
+      "kind": "contract_mutant",
+      "transposed": [
+        0,
+        1
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz4",
+      "kind": "contract_mutant",
+      "transposed": [
+        0,
+        2
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz4",
+      "kind": "contract_mutant",
+      "transposed": [
+        0,
+        3
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz4",
+      "kind": "contract_mutant",
+      "transposed": [
+        1,
+        2
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz4",
+      "kind": "contract_mutant",
+      "transposed": [
+        1,
+        3
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz4",
+      "kind": "contract_mutant",
+      "transposed": [
+        2,
+        3
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft4",
+      "kind": "clean",
+      "contract_fired": false
+    },
+    {
+      "circuit": "qft4",
+      "kind": "contract_mutant",
+      "transposed": [
+        0,
+        1
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft4",
+      "kind": "contract_mutant",
+      "transposed": [
+        0,
+        2
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft4",
+      "kind": "contract_mutant",
+      "transposed": [
+        0,
+        3
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft4",
+      "kind": "contract_mutant",
+      "transposed": [
+        1,
+        2
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft4",
+      "kind": "contract_mutant",
+      "transposed": [
+        1,
+        3
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft4",
+      "kind": "contract_mutant",
+      "transposed": [
+        2,
+        3
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz5",
+      "kind": "clean",
+      "contract_fired": false
+    },
+    {
+      "circuit": "ghz5",
+      "kind": "contract_mutant",
+      "transposed": [
+        0,
+        1
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz5",
+      "kind": "contract_mutant",
+      "transposed": [
+        0,
+        2
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz5",
+      "kind": "contract_mutant",
+      "transposed": [
+        0,
+        3
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz5",
+      "kind": "contract_mutant",
+      "transposed": [
+        0,
+        4
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz5",
+      "kind": "contract_mutant",
+      "transposed": [
+        1,
+        2
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz5",
+      "kind": "contract_mutant",
+      "transposed": [
+        1,
+        3
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz5",
+      "kind": "contract_mutant",
+      "transposed": [
+        1,
+        4
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz5",
+      "kind": "contract_mutant",
+      "transposed": [
+        2,
+        3
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz5",
+      "kind": "contract_mutant",
+      "transposed": [
+        2,
+        4
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz5",
+      "kind": "contract_mutant",
+      "transposed": [
+        3,
+        4
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft5",
+      "kind": "clean",
+      "contract_fired": false
+    },
+    {
+      "circuit": "qft5",
+      "kind": "contract_mutant",
+      "transposed": [
+        0,
+        1
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft5",
+      "kind": "contract_mutant",
+      "transposed": [
+        0,
+        2
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft5",
+      "kind": "contract_mutant",
+      "transposed": [
+        0,
+        3
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft5",
+      "kind": "contract_mutant",
+      "transposed": [
+        0,
+        4
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft5",
+      "kind": "contract_mutant",
+      "transposed": [
+        1,
+        2
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft5",
+      "kind": "contract_mutant",
+      "transposed": [
+        1,
+        3
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft5",
+      "kind": "contract_mutant",
+      "transposed": [
+        1,
+        4
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft5",
+      "kind": "contract_mutant",
+      "transposed": [
+        2,
+        3
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft5",
+      "kind": "contract_mutant",
+      "transposed": [
+        2,
+        4
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft5",
+      "kind": "contract_mutant",
+      "transposed": [
+        3,
+        4
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz6",
+      "kind": "clean",
+      "contract_fired": false
+    },
+    {
+      "circuit": "ghz6",
+      "kind": "contract_mutant",
+      "transposed": [
+        0,
+        1
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz6",
+      "kind": "contract_mutant",
+      "transposed": [
+        0,
+        2
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz6",
+      "kind": "contract_mutant",
+      "transposed": [
+        0,
+        3
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz6",
+      "kind": "contract_mutant",
+      "transposed": [
+        0,
+        4
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz6",
+      "kind": "contract_mutant",
+      "transposed": [
+        0,
+        5
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz6",
+      "kind": "contract_mutant",
+      "transposed": [
+        1,
+        2
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz6",
+      "kind": "contract_mutant",
+      "transposed": [
+        1,
+        3
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz6",
+      "kind": "contract_mutant",
+      "transposed": [
+        1,
+        4
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz6",
+      "kind": "contract_mutant",
+      "transposed": [
+        1,
+        5
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz6",
+      "kind": "contract_mutant",
+      "transposed": [
+        2,
+        3
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz6",
+      "kind": "contract_mutant",
+      "transposed": [
+        2,
+        4
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz6",
+      "kind": "contract_mutant",
+      "transposed": [
+        2,
+        5
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz6",
+      "kind": "contract_mutant",
+      "transposed": [
+        3,
+        4
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz6",
+      "kind": "contract_mutant",
+      "transposed": [
+        3,
+        5
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "ghz6",
+      "kind": "contract_mutant",
+      "transposed": [
+        4,
+        5
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft6",
+      "kind": "clean",
+      "contract_fired": false
+    },
+    {
+      "circuit": "qft6",
+      "kind": "contract_mutant",
+      "transposed": [
+        0,
+        1
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft6",
+      "kind": "contract_mutant",
+      "transposed": [
+        0,
+        2
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft6",
+      "kind": "contract_mutant",
+      "transposed": [
+        0,
+        3
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft6",
+      "kind": "contract_mutant",
+      "transposed": [
+        0,
+        4
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft6",
+      "kind": "contract_mutant",
+      "transposed": [
+        0,
+        5
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft6",
+      "kind": "contract_mutant",
+      "transposed": [
+        1,
+        2
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft6",
+      "kind": "contract_mutant",
+      "transposed": [
+        1,
+        3
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft6",
+      "kind": "contract_mutant",
+      "transposed": [
+        1,
+        4
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft6",
+      "kind": "contract_mutant",
+      "transposed": [
+        1,
+        5
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft6",
+      "kind": "contract_mutant",
+      "transposed": [
+        2,
+        3
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft6",
+      "kind": "contract_mutant",
+      "transposed": [
+        2,
+        4
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft6",
+      "kind": "contract_mutant",
+      "transposed": [
+        2,
+        5
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft6",
+      "kind": "contract_mutant",
+      "transposed": [
+        3,
+        4
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft6",
+      "kind": "contract_mutant",
+      "transposed": [
+        3,
+        5
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    },
+    {
+      "circuit": "qft6",
+      "kind": "contract_mutant",
+      "transposed": [
+        4,
+        5
+      ],
+      "contract_fired": true,
+      "output_blind": true
+    }
+  ]
+}

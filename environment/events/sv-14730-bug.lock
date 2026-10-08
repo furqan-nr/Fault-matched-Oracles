@@ -1,0 +1,8 @@
+{
+  "event_environment_id": "sv-14730-bug",
+  "requested": "056c6413b03a306b170bc18efb8fcf9cc1c8a3a5",
+  "resolved_sha": "056c6413b03a306b170bc18efb8fcf9cc1c8a3a5",
+  "qiskit_version": "2.2.0",
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26200-SP0"
+}

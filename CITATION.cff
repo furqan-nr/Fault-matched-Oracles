@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite both the software (metadata below) and the accompanying paper (see preferred-citation)."
-title: "Fault-Class-Matched Test Oracles for Output-Invisible Quantum Transpiler Regressions (fault-matched-oracles)"
-version: "1.0.0"
-date-released: "2026-09-20"
+title: "Fault-Class-Matched Test Oracles for Output-Invisible Quantum Transpiler Faults (fault-matched-oracles)"
+version: "1.1.0"
+date-released: "2026-10-08"
 license: MIT
 type: software
 repository-code: "https://github.com/furqan-nr/Fault-matched-Oracles"
@@ -39,7 +39,7 @@ authors:
     orcid: "https://orcid.org/0000-0002-5259-3448"
     affiliation: "City University of Science and Information Technology (CUSIT), Peshawar, Pakistan"
   - family-names: Shah
-    given-names: Arif
+    given-names: Muhammad Arif
     orcid: "https://orcid.org/0000-0003-0090-3333"
     affiliation: "City University of Science and Information Technology (CUSIT), Peshawar, Pakistan"
   - family-names: Alam
@@ -47,16 +47,16 @@ authors:
     affiliation: "City University of Science and Information Technology (CUSIT), Peshawar, Pakistan"
 preferred-citation:
   type: article
-  title: "Fault-Class-Matched Test Oracles for Output-Invisible Quantum Transpiler Regressions"
+  title: "Fault-Class-Matched Test Oracles for Output-Invisible Quantum Transpiler Faults"
   authors:
     - family-names: Nasir
       given-names: Furqan
       orcid: "https://orcid.org/0000-0002-5259-3448"
     - family-names: Shah
-      given-names: Arif
+      given-names: Muhammad Arif
       orcid: "https://orcid.org/0000-0003-0090-3333"
     - family-names: Alam
       given-names: Iftikhar
-  journal: "Software Testing, Verification and Reliability"
+  journal: "ACM Transactions on Quantum Computing"
   year: 2026
-  notes: "Wiley. Status: manuscript prepared for submission; add volume, pages, and DOI on acceptance."
+  notes: "ACM. Status: manuscript prepared for submission; add volume, pages, and DOI on acceptance."

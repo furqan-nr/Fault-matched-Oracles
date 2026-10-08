@@ -1,8 +1,8 @@
 # Reproducibility package
 
 This archive accompanies the manuscript **"Fault-Class-Matched Test Oracles for Output-Invisible
-Quantum Transpiler Regressions"** (Nasir, Shah, Alam; prepared for submission to *Software Testing,
-Verification and Reliability*, Wiley).
+Quantum Transpiler Faults"** (Nasir, Shah, Alam; prepared for submission to *ACM Transactions on
+Quantum Computing*).
 
 - Repository: https://github.com/furqan-nr/Fault-matched-Oracles
 - Archive (DOI): [10.5281/zenodo.22855185](https://doi.org/10.5281/zenodo.22855185)
@@ -44,6 +44,7 @@ python scripts/channel_matched_eval.py      # writes results/channel_matched_eva
 python scripts/heldout_oracle_eval.py       # writes results/heldout_oracle_eval.json
 python scripts/contract_mutant_eval.py      # writes results/contract_mutant_eval.json
 python scripts/determinism_mutant_eval.py   # writes results/determinism_mutant_eval.json
+python scripts/determinism_mutant_eval_v2.py   # v2 stronger func fingerprint (layout-normalized unitary mod global phase); writes results/determinism_mutant_eval_v2.json
 ```
 
 Expected (already saved in the `results/*.json` files above): the contract/metadata and
@@ -157,3 +158,28 @@ is the corresponding verifier.
   `data/mining_validation/` in this archive; none is re-derived from data outside it.
 - Scripts that need a from-source Qiskit build hardcode the specific fix/parent commit SHAs they
   verify in their own header — see each script's docstring before rerunning it.
+
+## Review-response strengthener scripts (B2–B4, 2026-10-07)
+- `python scripts/cost_scaling_eval_v2.py`   # B4: cost across GHZ, QFT, random (anchor env) -> results/cost_scaling_eval_v2.json
+- `python scripts/heldout_oracle_eval.py`    # B2: independent-operator (non-circular) specificity (anchor env) -> results/heldout_oracle_eval.json
+- `python scripts/tket_contract_port.py`     # B3: contract checker ported to tket, synthetic mutant (pytket venv) -> results/tket_contract_port.json
+# B3 real-fault mapping (static, non-executed): docs/TKET_CONTRACT_FAULT_MAP.md
+
+## Table / claim to script map (manuscript revision of 2026-10-08)
+
+| Manuscript item | Script(s) | Output | Environment |
+|---|---|---|---|
+| Table 4, nine real faults (Level 1 / Level 3) | section 6 above (per-fault verifiers, e.g. `verify_h1_isolated.py`, `verify_15024_contract.py`, `verify_16237.py`, `determinism_eval_v2.py`) | `results/` per fault | from-source builds |
+| Table 5, mutant families | `contract_mutant_eval.py`, `channel_matched_eval.py`, `determinism_mutant_eval_v2.py` | `results/*.json` | anchor Qiskit 2.4.2 |
+| Section 6.3, held-out specificity (54 calls) | `heldout_oracle_eval.py` | `results/heldout_oracle_eval.json` | anchor Qiskit |
+| Section 6.3, adversarial checks (5 cases) | `adversarial_validation_bundle.py` | `results/adversarial_validation_bundle.json` | anchor Qiskit |
+| Section 4.2, composition-order probe | `composition_order_probe.py` | `results/composition_order_probe.json` (2.4.2), `results/composition_order_probe_qiskit2.5.2.json` | anchor Qiskit / 2.5.2 |
+| Table 6, cost (GHZ) and QFT/random confirmation | `cost_scaling_eval.py`, `cost_scaling_eval_v2.py` | `results/cost_scaling_eval*.json` | anchor Qiskit; absolute ms are machine-dependent, ordering is the claim |
+| Table 7, cross-SDK | `tket_global_phase_port.py`, `tket_contract_port.py` | `results/tket_*.json` | pytket 2.18.1 venv |
+| tket real-fault mapping (static) | `docs/TKET_CONTRACT_FAULT_MAP.md` | n/a | n/a |
+
+Clean-run check (2026-10-08, Linux, Python 3.10, qiskit 2.4.2, numpy 2.2.6): `contract_mutant_eval.py`
+(36/36, 6/6), `channel_matched_eval.py` (36/36 phase, 15 clean calls), `heldout_oracle_eval.py` (0/54, 6/6),
+`composition_order_probe.py` and `adversarial_validation_bundle.py` (all five cases pass) reproduce the
+reported counts. The pinned `environment/requirements.lock` requires Python 3.11 (numpy 2.4.x); the
+check above used the anchor Qiskit wheel on Python 3.10 and is not a run of that lock.

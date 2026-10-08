@@ -1,0 +1,384 @@
+{
+  "case1_nonzero_input_phase": {
+    "claim": "A legitimate nonzero input global phase, preserved by the compiler, is not flagged.",
+    "expected": "phase_equivalent True, contract silent",
+    "rows": [
+      {
+        "circuit": "ghz4_phase0.7",
+        "input_global_phase": 0.7,
+        "compiled_global_phase": 1.4853981633974485,
+        "result": {
+          "contract_fired": false,
+          "contract_violations": [],
+          "mr1_holds": true,
+          "phase_equivalent": true,
+          "phase_delta": 4.440892098500626e-16,
+          "phase_details": {
+            "method": "operator_phase"
+          },
+          "semantic_equivalent": true
+        },
+        "pass": true
+      },
+      {
+        "circuit": "qft4_phase1.3",
+        "input_global_phase": 1.3,
+        "compiled_global_phase": 2.968971097219578,
+        "result": {
+          "contract_fired": false,
+          "contract_violations": [],
+          "mr1_holds": "n/a",
+          "phase_equivalent": true,
+          "phase_delta": 4.440892098500626e-16,
+          "phase_details": {
+            "method": "operator_phase"
+          },
+          "semantic_equivalent": true
+        },
+        "pass": true
+      },
+      {
+        "circuit": "qft5_phase-2.1",
+        "input_global_phase": 4.183185307179587,
+        "compiled_global_phase": 4.2322726923919305,
+        "result": {
+          "contract_fired": false,
+          "contract_violations": [],
+          "mr1_holds": "n/a",
+          "phase_equivalent": true,
+          "phase_delta": 3.552713678800501e-15,
+          "phase_details": {
+            "method": "operator_phase"
+          },
+          "semantic_equivalent": true
+        },
+        "pass": true
+      }
+    ],
+    "pass": true
+  },
+  "case2_nontrivial_layout": {
+    "claim": "A correct, nontrivial layout/routing permutation is not flagged by the contract checker and passes the output oracle.",
+    "expected": "nontrivial layout, contract silent, semantic equivalent",
+    "rows": [
+      {
+        "circuit": "longrange5",
+        "final_index_layout": [
+          1,
+          3,
+          2,
+          4,
+          0
+        ],
+        "routing_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "nontrivial_layout": true,
+        "result": {
+          "contract_fired": false,
+          "contract_violations": [],
+          "mr1_holds": "n/a",
+          "phase_equivalent": true,
+          "phase_delta": 0.0,
+          "phase_details": {
+            "method": "operator_phase"
+          },
+          "semantic_equivalent": true
+        },
+        "pass": true
+      },
+      {
+        "circuit": "longrange6",
+        "final_index_layout": [
+          1,
+          4,
+          2,
+          3,
+          5,
+          0
+        ],
+        "routing_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "nontrivial_layout": true,
+        "result": {
+          "contract_fired": false,
+          "contract_violations": [],
+          "mr1_holds": "n/a",
+          "phase_equivalent": true,
+          "phase_delta": 0.0,
+          "phase_details": {
+            "method": "operator_phase"
+          },
+          "semantic_equivalent": true
+        },
+        "pass": true
+      },
+      {
+        "circuit": "qft5",
+        "final_index_layout": [
+          2,
+          1,
+          0,
+          4,
+          3
+        ],
+        "routing_permutation": [
+          0,
+          3,
+          4,
+          1,
+          2
+        ],
+        "nontrivial_layout": true,
+        "result": {
+          "contract_fired": false,
+          "contract_violations": [],
+          "mr1_holds": "n/a",
+          "phase_equivalent": true,
+          "phase_delta": -2.220446049250313e-15,
+          "phase_details": {
+            "method": "operator_phase"
+          },
+          "semantic_equivalent": true
+        },
+        "pass": true
+      }
+    ],
+    "pass": true
+  },
+  "case3_self_consistent_corruption": {
+    "claim": "LIMITATION: a self-consistent but wrong metadata triple satisfies K1 and K2 and is not flagged by the single-version contract checker; MR-1 and the output oracle behaviour on the same input are recorded for comparison.",
+    "expected": "contract silent (documented limitation)",
+    "rows": [
+      {
+        "circuit": "ghz5",
+        "original": {
+          "initial": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "routing": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "corrupted": {
+          "initial": [
+            1,
+            0,
+            2,
+            3,
+            4
+          ],
+          "routing": [
+            0,
+            1,
+            2,
+            4,
+            3
+          ],
+          "final": [
+            1,
+            0,
+            2,
+            4,
+            3
+          ]
+        },
+        "triple_changed": true,
+        "result": {
+          "contract_fired": false,
+          "contract_violations": [],
+          "mr1_holds": false,
+          "phase_equivalent": true,
+          "phase_delta": 0.0,
+          "phase_details": {
+            "method": "operator_phase"
+          },
+          "semantic_equivalent": true
+        },
+        "contract_silent": true
+      },
+      {
+        "circuit": "qft5",
+        "original": {
+          "initial": [
+            0,
+            1,
+            4,
+            2,
+            3
+          ],
+          "routing": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "corrupted": {
+          "initial": [
+            1,
+            0,
+            4,
+            2,
+            3
+          ],
+          "routing": [
+            0,
+            1,
+            2,
+            4,
+            3
+          ],
+          "final": [
+            1,
+            0,
+            4,
+            3,
+            2
+          ]
+        },
+        "triple_changed": true,
+        "result": {
+          "contract_fired": false,
+          "contract_violations": [],
+          "mr1_holds": "n/a",
+          "phase_equivalent": true,
+          "phase_delta": 3.552713678800501e-15,
+          "phase_details": {
+            "method": "operator_phase"
+          },
+          "semantic_equivalent": true
+        },
+        "contract_silent": true
+      }
+    ],
+    "pass": true
+  },
+  "case4_inequivalent_output": {
+    "claim": "A genuinely inequivalent output is left to the output oracle: the phase tracker reports not assessable and never classifies it as a phase fault.",
+    "expected": "phase_equivalent None; semantic_equivalent False",
+    "rows": [
+      {
+        "circuit": "ghz4",
+        "result": {
+          "contract_fired": false,
+          "contract_violations": [],
+          "mr1_holds": "n/a",
+          "phase_equivalent": null,
+          "phase_delta": null,
+          "phase_details": {
+            "note": "circuits differ by more than a global phase (semantic difference \u2014 use the semantic oracle)"
+          },
+          "semantic_equivalent": false
+        },
+        "pass": true
+      },
+      {
+        "circuit": "qft4",
+        "result": {
+          "contract_fired": false,
+          "contract_violations": [],
+          "mr1_holds": "n/a",
+          "phase_equivalent": null,
+          "phase_delta": null,
+          "phase_details": {
+            "note": "circuits differ by more than a global phase (semantic difference \u2014 use the semantic oracle)"
+          },
+          "semantic_equivalent": false
+        },
+        "pass": true
+      }
+    ],
+    "pass": true
+  },
+  "case5_fixed_seed_contract": {
+    "claim": "The determinism runner reports against an explicitly stated contract, separating raw from functional non-reproducibility.",
+    "contract": "Explicit reproducibility contract: same library version, same circuit, coupling map, basis, optimization level and seed_transpiler=1234; PYTHONHASHSEED is varied across subprocesses; thread count is not constrained. 'Reproducible' means raw fingerprint (instruction sequence + final_index_layout) is identical across runs; the functional fingerprint (layout-normalized unitary modulo global phase) separates harmless raw differences from functional ones.",
+    "runs": 15,
+    "raw_distinct": 1,
+    "func_distinct": 1,
+    "per_hashseed": {
+      "0": {
+        "raw": [
+          "40f7a40bbca2",
+          "40f7a40bbca2",
+          "40f7a40bbca2"
+        ],
+        "func": [
+          "778885e47bcb",
+          "778885e47bcb",
+          "778885e47bcb"
+        ]
+      },
+      "1": {
+        "raw": [
+          "40f7a40bbca2",
+          "40f7a40bbca2",
+          "40f7a40bbca2"
+        ],
+        "func": [
+          "778885e47bcb",
+          "778885e47bcb",
+          "778885e47bcb"
+        ]
+      },
+      "2": {
+        "raw": [
+          "40f7a40bbca2",
+          "40f7a40bbca2",
+          "40f7a40bbca2"
+        ],
+        "func": [
+          "778885e47bcb",
+          "778885e47bcb",
+          "778885e47bcb"
+        ]
+      },
+      "3": {
+        "raw": [
+          "40f7a40bbca2",
+          "40f7a40bbca2",
+          "40f7a40bbca2"
+        ],
+        "func": [
+          "778885e47bcb",
+          "778885e47bcb",
+          "778885e47bcb"
+        ]
+      },
+      "4": {
+        "raw": [
+          "40f7a40bbca2",
+          "40f7a40bbca2",
+          "40f7a40bbca2"
+        ],
+        "func": [
+          "778885e47bcb",
+          "778885e47bcb",
+          "778885e47bcb"
+        ]
+      }
+    },
+    "verdict": "reproducible under the stated contract",
+    "pass": true
+  }
+}

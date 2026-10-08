@@ -1,0 +1,25 @@
+{
+  "fix": {
+    "raw_distinct": 1,
+    "func_distinct": 1,
+    "error": null
+  },
+  "parent": {
+    "raw_distinct": 5,
+    "func_distinct": 1,
+    "error": null
+  },
+  "func_fingerprint": "layout-normalized unitary modulo global phase (Operator.from_circuit; v2, review response B1)",
+  "func_method_used": {
+    "fix": "operator_from_circuit_mod_global_phase",
+    "parent": "operator_from_circuit_mod_global_phase"
+  },
+  "runs_per_build": 50,
+  "hashseeds": [
+    "0",
+    "1",
+    "2",
+    "7",
+    "13"
+  ]
+}

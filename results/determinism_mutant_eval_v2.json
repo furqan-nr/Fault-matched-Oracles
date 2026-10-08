@@ -1,0 +1,122 @@
+{
+  "summary": {
+    "circuits": 6,
+    "sensitivity_hits": 2,
+    "specificity_hits": 6,
+    "func_fingerprint": "layout-normalized unitary modulo global phase (Operator.from_circuit; v2, review response B1)",
+    "hashseeds": [
+      "0",
+      "1",
+      "2",
+      "7",
+      "13",
+      "23"
+    ],
+    "repeats_per_seed": 5,
+    "runs_per_condition_per_circuit": 30
+  },
+  "rows": [
+    {
+      "circuit": "ghz4",
+      "mutant": {
+        "raw_distinct": 1,
+        "func_distinct": 1,
+        "runs": 30,
+        "errors": []
+      },
+      "control": {
+        "raw_distinct": 1,
+        "func_distinct": 1,
+        "runs": 30,
+        "errors": []
+      },
+      "sensitivity_hit": false,
+      "specificity_hit": true
+    },
+    {
+      "circuit": "ghz5",
+      "mutant": {
+        "raw_distinct": 1,
+        "func_distinct": 1,
+        "runs": 30,
+        "errors": []
+      },
+      "control": {
+        "raw_distinct": 1,
+        "func_distinct": 1,
+        "runs": 30,
+        "errors": []
+      },
+      "sensitivity_hit": false,
+      "specificity_hit": true
+    },
+    {
+      "circuit": "ghz6",
+      "mutant": {
+        "raw_distinct": 1,
+        "func_distinct": 1,
+        "runs": 30,
+        "errors": []
+      },
+      "control": {
+        "raw_distinct": 1,
+        "func_distinct": 1,
+        "runs": 30,
+        "errors": []
+      },
+      "sensitivity_hit": false,
+      "specificity_hit": true
+    },
+    {
+      "circuit": "qft4",
+      "mutant": {
+        "raw_distinct": 2,
+        "func_distinct": 2,
+        "runs": 30,
+        "errors": []
+      },
+      "control": {
+        "raw_distinct": 1,
+        "func_distinct": 1,
+        "runs": 30,
+        "errors": []
+      },
+      "sensitivity_hit": false,
+      "specificity_hit": true
+    },
+    {
+      "circuit": "qft5",
+      "mutant": {
+        "raw_distinct": 2,
+        "func_distinct": 1,
+        "runs": 30,
+        "errors": []
+      },
+      "control": {
+        "raw_distinct": 1,
+        "func_distinct": 1,
+        "runs": 30,
+        "errors": []
+      },
+      "sensitivity_hit": true,
+      "specificity_hit": true
+    },
+    {
+      "circuit": "qft6",
+      "mutant": {
+        "raw_distinct": 2,
+        "func_distinct": 1,
+        "runs": 30,
+        "errors": []
+      },
+      "control": {
+        "raw_distinct": 1,
+        "func_distinct": 1,
+        "runs": 30,
+        "errors": []
+      },
+      "sensitivity_hit": true,
+      "specificity_hit": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "qiskit_version": "2.5.2",
+  "total": 168,
+  "counts": {
+    "both": 66,
+    "r_o_a_only": 102
+  },
+  "counts_where_orders_differ": {
+    "r_o_a_only": 102
+  }
+}

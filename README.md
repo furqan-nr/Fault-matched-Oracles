@@ -1,8 +1,8 @@
-# Fault-Class-Matched Test Oracles for Output-Invisible Quantum Transpiler Regressions
+# Fault-Class-Matched Test Oracles for Output-Invisible Quantum Transpiler Faults
 
 Reproducibility package for **"Fault-Class-Matched Test Oracles for Output-Invisible Quantum
-Transpiler Regressions"** (Nasir, Shah, Alam; prepared for submission to *Software Testing,
-Verification and Reliability*, Wiley). This repository holds the oracle implementations, every
+Transpiler Faults"** (Nasir, Shah, Alam; prepared for submission to *ACM Transactions on
+Quantum Computing*). This repository holds the oracle implementations, every
 verification and evaluation script, the already-executed evidence each reported number traces to,
 and the environment/build protocol needed to rebuild any of it from source.
 
