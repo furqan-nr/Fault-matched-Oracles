@@ -8,7 +8,7 @@ type: software
 repository-code: "https://github.com/furqan-nr/Fault-matched-Oracles"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.23241990"
+    value: "10.5281/zenodo.23245090"
     description: "Archived software/data release (GitHub release tag v1.1.1), Zenodo."
 keywords:
   - quantum software engineering
