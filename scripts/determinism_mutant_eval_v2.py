@@ -36,7 +36,10 @@ res = {}
 
 def canon(arr):
     a = np.asarray(arr, dtype=complex).ravel()
-    k = int(np.argmax(np.abs(a)))
+    # Stable pivot: FIRST entry whose magnitude exceeds half the maximum.  (argmax is unstable for
+    # unitaries with many equal-magnitude entries, e.g. QFT, where FP noise of ~1e-16 flips which
+    # entry is "largest" and so changes the phase reference between two functionally equal circuits.)
+    k = int(np.argmax(np.abs(a) > 0.5 * np.abs(a).max()))
     if abs(a[k]) > 1e-12:
         a = a * (abs(a[k]) / a[k])          # divide out global phase
     r  = np.round(a.real * 1e6).astype(np.int64)   # 6-decimal grid: tolerant to ~1e-16 FP noise
@@ -60,6 +63,10 @@ try:
     pm = generate_preset_pass_manager(optimization_level=3, coupling_map=CouplingMap.from_line(N),
                                        basis_gates=["cx", "rz", "sx", "x"], seed_transpiler=1234)
     out = pm.run(circ)
+    try:
+        U_REF = Operator.from_circuit(out).data     # unmutated reference, captured before any reordering
+    except Exception:
+        U_REF = Operator(out).data
 
     if MUTANT:
         data = list(out.data)
@@ -81,7 +88,13 @@ try:
         U = Operator.from_circuit(out).data
     except Exception:
         U = Operator(out).data
-    func = canon(U)
+    # Functional fingerprint: "REF" when the circuit is equivalent modulo global phase (Qiskit's own
+    # Operator.equiv) to the UNMUTATED compiled circuit of this same process; otherwise the canonical hash.
+    # This removes any dependence of the verdict on rounding-grid boundaries.
+    try:
+        func = "REF" if Operator(U).equiv(Operator(U_REF)) else canon(U)
+    except Exception:
+        func = canon(U)
     res["raw"] = raw; res["func"] = func
 except Exception as e:
     res["error"] = type(e).__name__ + ": " + str(e)[:300]

@@ -5,7 +5,7 @@ Quantum Transpiler Faults"** (Nasir, Shah, Alam; prepared for submission to *ACM
 Quantum Computing*).
 
 - Repository: https://github.com/furqan-nr/Fault-matched-Oracles
-- Archive (DOI): [10.5281/zenodo.22855185](https://doi.org/10.5281/zenodo.22855185)
+- Archive (DOI): [10.5281/zenodo.23241990](https://doi.org/10.5281/zenodo.23241990)
 - License: MIT (see `LICENSE`)
 
 This repository is the reproduction artifact only; the manuscript and its figures are maintained
@@ -45,6 +45,10 @@ python scripts/heldout_oracle_eval.py       # writes results/heldout_oracle_eval
 python scripts/contract_mutant_eval.py      # writes results/contract_mutant_eval.json
 python scripts/determinism_mutant_eval.py   # writes results/determinism_mutant_eval.json
 python scripts/determinism_mutant_eval_v2.py   # v2 stronger func fingerprint (layout-normalized unitary mod global phase); writes results/determinism_mutant_eval_v2.json
+#   Fingerprint note (v1.1.1): the functional fingerprint now (i) uses a tolerance-stable global-phase pivot
+#   (first entry whose magnitude exceeds half the maximum, instead of argmax, which flipped between
+#   equal-magnitude entries of QFT unitaries) and (ii) compares each run's unitary with a reference compiled
+#   before mutation via Operator.equiv. Expected: qft4/5/6 raw_distinct=2, func_distinct=1; ghz4/5/6 no-op; controls raw-stable.
 ```
 
 Expected (already saved in the `results/*.json` files above): the contract/metadata and

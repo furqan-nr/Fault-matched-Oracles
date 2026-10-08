@@ -1,7 +1,7 @@
 {
   "summary": {
     "circuits": 6,
-    "sensitivity_hits": 2,
+    "sensitivity_hits": 3,
     "specificity_hits": 6,
     "func_fingerprint": "layout-normalized unitary modulo global phase (Operator.from_circuit; v2, review response B1)",
     "hashseeds": [
@@ -71,7 +71,7 @@
       "circuit": "qft4",
       "mutant": {
         "raw_distinct": 2,
-        "func_distinct": 2,
+        "func_distinct": 1,
         "runs": 30,
         "errors": []
       },
@@ -81,7 +81,7 @@
         "runs": 30,
         "errors": []
       },
-      "sensitivity_hit": false,
+      "sensitivity_hit": true,
       "specificity_hit": true
     },
     {
