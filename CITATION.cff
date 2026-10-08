@@ -1,7 +1,7 @@
-cff-version: 1.2.0
+﻿cff-version: 1.2.0
 message: "If you use this software, please cite both the software (metadata below) and the accompanying paper (see preferred-citation)."
 title: "Fault-Class-Matched Test Oracles for Output-Invisible Quantum Transpiler Faults (fault-matched-oracles)"
-version: "1.1.0"
+version: "1.1.1"
 date-released: "2026-10-08"
 license: MIT
 type: software
@@ -9,7 +9,7 @@ repository-code: "https://github.com/furqan-nr/Fault-matched-Oracles"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.23241990"
-    description: "Archived software/data release (GitHub release tag v1.1.0), Zenodo."
+    description: "Archived software/data release (GitHub release tag v1.1.1), Zenodo."
 keywords:
   - quantum software engineering
   - quantum transpiler
