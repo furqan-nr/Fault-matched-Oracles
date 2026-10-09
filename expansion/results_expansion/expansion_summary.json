@@ -1,0 +1,52 @@
+[
+  {
+    "pr": "15943",
+    "channel": "phase",
+    "detect": true,
+    "blind": true,
+    "verdict": "REPRODUCED: invisible + detected",
+    "notes": [
+      "t1_single: REPO gp_oracle fix/bug=True/False semantic_oracle bug=True",
+      "t1_single: gp in=0.7854 fix_out=0.7854 bug_out=0.0000 exact_eq fix/bug=True/False mod-phase-eq bug=True",
+      "t1_multi: REPO gp_oracle fix/bug=True/False semantic_oracle bug=True",
+      "t1_multi: gp in=1.0472 fix_out=1.0472 bug_out=0.0000 exact_eq fix/bug=True/False mod-phase-eq bug=True",
+      "t2: REPO gp_oracle fix/bug=True/False semantic_oracle bug=True",
+      "t2: gp in=0.7854 fix_out=1.5708 bug_out=0.0000 exact_eq fix/bug=True/False mod-phase-eq bug=True",
+      "t3: REPO gp_oracle fix/bug=True/False semantic_oracle bug=True",
+      "t3: gp in=1.0472 fix_out=1.8326 bug_out=0.0000 exact_eq fix/bug=True/False mod-phase-eq bug=True"
+    ]
+  },
+  {
+    "pr": "13833",
+    "channel": "contract",
+    "detect": true,
+    "blind": true,
+    "verdict": "REPRODUCED: invisible + detected",
+    "notes": [
+      "REPO check_contracts fix=[] bug=[] semantic bug=None",
+      "fix final=[2, 0, 1, 3, 4, 5] bug final=None bug len(initial/final)=6/3 bug_err=KeyError: \"The item Qubit(QuantumRegister(6, 'q'), 3) does not exist in the Layout\""
+    ]
+  },
+  {
+    "pr": "13945",
+    "channel": "contract",
+    "detect": true,
+    "blind": true,
+    "verdict": "REPRODUCED: invisible + detected",
+    "notes": [
+      "violating pipelines on BUG (consistent on FIX): ['star+elide', 'star+elide+split', 'star+split+elide']",
+      "pipelines where vpl differs fix-vs-bug: ['star+elide', 'star+elide+split', 'star+split+elide']",
+      "pipelines inconsistent on FIX (should be empty): []"
+    ]
+  },
+  {
+    "pr": "14763",
+    "channel": "determinism",
+    "detect": true,
+    "blind": true,
+    "verdict": "REPRODUCED: invisible + detected",
+    "notes": [
+      "bug: 20/20 structurally unequal, 0/20 output-fingerprint unequal; fix: 0/20"
+    ]
+  }
+]

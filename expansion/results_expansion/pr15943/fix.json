@@ -1,0 +1,82 @@
+{
+  "pr": "15943",
+  "label": "fix",
+  "qiskit": "2.5.0.dev0",
+  "result": {
+    "t1_single": {
+      "in_gp": 0.7853981633974483,
+      "out_gp": 0.7853981633974483,
+      "ops": {},
+      "operator_exact_equal": true,
+      "equiv_mod_phase": true,
+      "fp": {
+        "ops": [],
+        "global_phase": 0.785398163
+      },
+      "gp_oracle_equivalent": true,
+      "gp_oracle_delta": 0.0,
+      "semantic_oracle_equivalent": true
+    },
+    "t1_multi": {
+      "in_gp": 1.0471975511965976,
+      "out_gp": 1.0471975511965976,
+      "ops": {},
+      "operator_exact_equal": true,
+      "equiv_mod_phase": true,
+      "fp": {
+        "ops": [],
+        "global_phase": 1.047197551
+      },
+      "gp_oracle_equivalent": true,
+      "gp_oracle_delta": 0.0,
+      "semantic_oracle_equivalent": true
+    },
+    "t2": {
+      "in_gp": 0.7853981633974483,
+      "out_gp": 1.5707963267948966,
+      "ops": {
+        "sdg": 1,
+        "h": 1
+      },
+      "operator_exact_equal": true,
+      "equiv_mod_phase": true,
+      "fp": {
+        "ops": [
+          [
+            "sdg",
+            [
+              0
+            ],
+            []
+          ],
+          [
+            "h",
+            [
+              0
+            ],
+            []
+          ]
+        ],
+        "global_phase": 1.570796327
+      },
+      "gp_oracle_equivalent": true,
+      "gp_oracle_delta": 0.0,
+      "semantic_oracle_equivalent": true
+    },
+    "t3": {
+      "in_gp": 1.0471975511965976,
+      "out_gp": 1.8325957145940457,
+      "ops": {},
+      "operator_exact_equal": true,
+      "equiv_mod_phase": true,
+      "fp": {
+        "ops": [],
+        "global_phase": 1.832595715
+      },
+      "gp_oracle_equivalent": true,
+      "gp_oracle_delta": -4.440892098500626e-16,
+      "semantic_oracle_equivalent": true
+    }
+  },
+  "status": "ok"
+}

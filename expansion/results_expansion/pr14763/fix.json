@@ -1,0 +1,25 @@
+{
+  "pr": "14763",
+  "label": "fix",
+  "qiskit": "2.2.0",
+  "result": {
+    "repeats": 20,
+    "has_structurally_equal": true,
+    "n_structurally_unequal": 0,
+    "n_output_fingerprint_unequal": 0,
+    "fp": {
+      "global_phase": 0.0,
+      "ops": [
+        [
+          "cz",
+          [
+            20,
+            0
+          ],
+          []
+        ]
+      ]
+    }
+  },
+  "status": "ok"
+}

@@ -187,3 +187,17 @@ Clean-run check (2026-10-08, Linux, Python 3.10, qiskit 2.4.2, numpy 2.2.6): `co
 `composition_order_probe.py` and `adversarial_validation_bundle.py` (all five cases pass) reproduce the
 reported counts. The pinned `environment/requirements.lock` requires Python 3.11 (numpy 2.4.x); the
 check above used the anchor Qiskit wheel on Python 3.10 and is not a run of that lock.
+
+## 5. Post hoc replication on four further faults (Table 4b) - from-source builds, Windows PowerShell
+
+Added in v1.2.0. The nine faults of Table 4 are untouched. `expansion/` holds the build and probe scripts and the saved
+results for four further candidate PRs (#13945, #13833, #15943, #14763). Needs Python 3.11, git and a Rust toolchain.
+
+```powershell
+cd expansion
+powershell -ExecutionPolicy Bypass -File .\resolve_shas.ps1     # clones Qiskit once, resolves fix/parent SHAs
+powershell -ExecutionPolicy Bypass -File .\run_expansion.ps1       # builds fix+parent per PR, runs probe.py, prints verdicts
+```
+
+Saved evidence: `expansion/results_expansion/pr<N>/{fix,bug}.json` and `expansion_summary.json`. Only #15943 is detected by an
+unchanged oracle component; the other three use checks added after the fault was observed (see `probe.py` and the manuscript).

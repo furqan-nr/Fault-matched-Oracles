@@ -1,0 +1,61 @@
+{
+  "pr": "13833",
+  "label": "bug",
+  "qiskit": "2.0.0",
+  "result": {
+    "len_initial": 6,
+    "len_final": 3,
+    "initial_index_layout": [
+      1,
+      0,
+      2,
+      3,
+      4,
+      5
+    ],
+    "final_index_layout": null,
+    "final_index_layout_error": "KeyError: \"The item Qubit(QuantumRegister(6, 'q'), 3) does not exist in the Layout\"",
+    "final_is_permutation": false,
+    "contract_ok": false,
+    "repo_check_contracts": [],
+    "repo_semantic_equivalent": null,
+    "fp": {
+      "ops": [
+        [
+          "cx",
+          [
+            1,
+            0
+          ],
+          []
+        ],
+        [
+          "swap",
+          [
+            2,
+            1
+          ],
+          []
+        ],
+        [
+          "cx",
+          [
+            0,
+            1
+          ],
+          []
+        ],
+        [
+          "cx",
+          [
+            1,
+            2
+          ],
+          []
+        ]
+      ],
+      "global_phase": 0.0
+    }
+  },
+  "status": "ok"
+}
