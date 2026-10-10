@@ -8,8 +8,11 @@ type: software
 repository-code: "https://github.com/furqan-nr/Fault-matched-Oracles"
 identifiers:
   - type: doi
+    value: "10.5281/zenodo.23279100"
+    description: "Archived software/data release v1.2.1 (this version), Zenodo."
+  - type: doi
     value: "10.5281/zenodo.23245090"
-    description: "Archived software/data release (GitHub release tag v1.1.1), Zenodo. Replace by the DOI of v1.2.1 once that release is published."
+    description: "Earlier archived release v1.1.1, Zenodo."
 keywords:
   - quantum software engineering
   - quantum transpiler

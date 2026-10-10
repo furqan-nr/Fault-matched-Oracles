@@ -6,7 +6,7 @@ verification and evaluation script, the already-executed evidence each reported 
 and the environment/build protocol needed to rebuild any of it from source.
 
 - **Repository:** https://github.com/furqan-nr/Fault-matched-Oracles
-- **Archive (DOI):** [10.5281/zenodo.23245090](https://doi.org/10.5281/zenodo.23245090) (release v1.1.1). The DOI of release v1.2.1 is added here once the release is published on Zenodo.
+- **Archive (DOI):** [10.5281/zenodo.23279100](https://doi.org/10.5281/zenodo.23279100) (release v1.2.1, this version). The earlier release v1.1.1 is archived as [10.5281/zenodo.23245090](https://doi.org/10.5281/zenodo.23245090).
 - **License:** MIT (see `LICENSE`)
 
 This is a **companion, independent artifact** to the empirical prevalence study behind it
