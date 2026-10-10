@@ -29,7 +29,6 @@ py -3.11 -m venv .venv-anchor
 & .\.venv-anchor\Scripts\Activate.ps1
 python -m pip install --upgrade "pip>=19" wheel
 python -m pip install -r environment\requirements.anchor.in
-python -m pip install -e .
 
 Write-Host "==> E3: from-source Qiskit build smoke ($BuildTag) [isolated venv]"
 & "$PSScriptRoot\build_qiskit_event.ps1" -Sha $BuildTag -EventEnvId ("smoke-" + ($BuildTag -replace '\.','_'))
@@ -37,7 +36,6 @@ Write-Host "==> E3: from-source Qiskit build smoke ($BuildTag) [isolated venv]"
 Write-Host "==> E4 + Phase 0 (in .venv-anchor)"
 & .\.venv-anchor\Scripts\Activate.ps1
 python environment\setup\check_feasibility.py
-python -m cart.cli manifest
-python -m pytest -q
+$env:PYTHONPATH = "src"; python -m cart.cli events validate
 
 Write-Host "==> Done. Fill machine-specific fields in environment\ENV.md."

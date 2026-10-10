@@ -1,0 +1,50 @@
+{
+ "qiskit": "2.4.2",
+ "exact": {
+  "total": 2400,
+  "preserved": 2400,
+  "fault": 0,
+  "not_assessable": 0,
+  "max_abs_delta": 6.306066779870889e-14,
+  "nonzero_input_phase_total": 1920,
+  "by_level": {
+   "level0": {
+    "total": 600,
+    "preserved": 600,
+    "fault": 0,
+    "not_assessable": 0
+   },
+   "level1": {
+    "total": 600,
+    "preserved": 600,
+    "fault": 0,
+    "not_assessable": 0
+   },
+   "level2": {
+    "total": 600,
+    "preserved": 600,
+    "fault": 0,
+    "not_assessable": 0
+   },
+   "level3": {
+    "total": 600,
+    "preserved": 600,
+    "fault": 0,
+    "not_assessable": 0
+   }
+  },
+  "exceptions": []
+ },
+ "sampled": {
+  "total": 12,
+  "preserved": 12,
+  "fault": 0,
+  "not_assessable": 0,
+  "max_abs_delta": 1.7763568394002505e-14
+ },
+ "negative_control": {
+  "total": 36,
+  "detected": 36
+ },
+ "elapsed_s": 44.3
+}

@@ -21,7 +21,7 @@ rustc --version && cargo --version    # confirm
 
 Open WSL in this project folder:
 ```bash
-cd /mnt/c/Users/furqa/Desktop/Aspire/quantum-transpiler-regression-testing
+cd <path-to-this-repository>
 ```
 
 ## 1. E1, build the harness + lockfile
@@ -48,12 +48,10 @@ python environment/setup/check_feasibility.py
 ```
 Pick a sampled-SV ceiling whose peak stays well under your RAM (reference: ~352 MB at 22 qubits).
 
-## 4. Smoke the Phase 0 pipeline
+## 4. Smoke check the event table
 
 ```bash
-pip install -e .
-python -m cart.cli manifest        # writes data/manifest_static/ + results/<run>/smoke_profile/
-pytest -q                          # 8 tests
+PYTHONPATH=src python -m cart.cli events validate   # validates data/events/events.json
 ```
 
 ## 5. Record results

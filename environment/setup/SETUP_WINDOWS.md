@@ -36,39 +36,36 @@ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 ## 2. Run it all (one command)
 
 ```powershell
-cd C:\Users\furqa\Desktop\Aspire\quantum-transpiler-regression-testing
+cd <path-to-this-repository>
 .\environment\setup\bootstrap.ps1
 ```
 
 This runs E1 (harness lock), E3 (builds Qiskit `2.4.2` from source to confirm your toolchain),
-E4 (statevector feasibility), then installs the package, builds the Phase 0 manifest, and runs the
-tests.
+E4 (statevector feasibility), then validates the historical-event table.
 
 ### Or step by step
 ```powershell
-cd C:\Users\furqa\Desktop\Aspire\quantum-transpiler-regression-testing
+cd <path-to-this-repository>
 
 # E1 - pinned harness lock (no Qiskit)
 .\environment\setup\make_harness_lock.ps1
 
-# E2 - anchor/dev env (harness + Qiskit 2.4.2 wheel) where Phase 0 + tests run
+# E2 - anchor env (harness + Qiskit 2.4.2 wheel) where the oracle scripts run
 py -3.11 -m venv .venv-anchor
 .\.venv-anchor\Scripts\Activate.ps1
 python -m pip install --upgrade "pip>=19" wheel
 python -m pip install -r environment\requirements.anchor.in
-python -m pip install -e .
 
 # E3 - from-source Qiskit build (isolated venv); confirms your Rust toolchain
 .\environment\setup\build_qiskit_event.ps1 -Sha 2.4.2 -EventEnvId smoke-2_4_2
 
-# E4 + Phase 0 - in the anchor env
+# E4 + event-table check - in the anchor env
 python environment\setup\check_feasibility.py
-python -m cart.cli manifest      # writes data\manifest_static\ + results\<run>\smoke_profile\
-python -m pytest -q              # 8 tests
+$env:PYTHONPATH = "src"; python -m cart.cli events validate   # validates data\events\events.json
 ```
 
-> Note: Phase 0 and the tests run in **`.venv-anchor`** (it has Qiskit). The bare `.venv-harness`
-> intentionally has no Qiskit (per-event builds supply it in Phase 2).
+> Note: the oracle scripts run in **`.venv-anchor`** (it has Qiskit). The bare `.venv-harness`
+> intentionally has no Qiskit (per-event builds supply it).
 
 ## 3. Record results
 Fill the blank fields in `environment\ENV.md` (OS, CPU, RAM, versions, Benchpress SHA, lock

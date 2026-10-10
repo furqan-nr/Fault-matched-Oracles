@@ -1,0 +1,26 @@
+{
+  "pr": "16336",
+  "label": "bug",
+  "qiskit": "2.5.0.dev0",
+  "result": {
+    "seed_seen": [
+      "1"
+    ],
+    "seed_seen_type": [
+      "int"
+    ],
+    "seed_is_1234": false,
+    "explicit1234_run_to_run_equal": true,
+    "env_vs_env_equal": true,
+    "env_vs_explicit1234_equal": false,
+    "env_vs_explicit1_equal": true,
+    "explicit1234_vs_explicit1_equal": false,
+    "depth_env/exp1234/exp1": [
+      107,
+      119,
+      107
+    ],
+    "repo_semantic_equivalent_env_run": null,
+    "repo_semantic_strength": "structural"
+  }
+}

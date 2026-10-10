@@ -1,0 +1,85 @@
+{
+  "pr": "16920",
+  "label": "fix",
+  "qiskit": "2.6.0.dev0",
+  "result": {
+    "input_ops": [
+      [
+        "x",
+        [
+          2
+        ],
+        []
+      ],
+      [
+        "swap",
+        [
+          1,
+          2
+        ],
+        []
+      ],
+      [
+        "measure",
+        [
+          1
+        ],
+        [
+          0
+        ]
+      ]
+    ],
+    "input_outcome": {
+      "clbits": [
+        1
+      ]
+    },
+    "ran": true,
+    "output_ops": [
+      [
+        "x",
+        [
+          2
+        ],
+        []
+      ],
+      [
+        "measure",
+        [
+          2
+        ],
+        [
+          0
+        ]
+      ]
+    ],
+    "output_outcome": {
+      "clbits": [
+        1
+      ]
+    },
+    "equals_expected": true,
+    "expected_ops": [
+      [
+        "x",
+        [
+          2
+        ],
+        []
+      ],
+      [
+        "measure",
+        [
+          2
+        ],
+        [
+          0
+        ]
+      ]
+    ],
+    "outcome_preserved": true,
+    "output_equals_input": false,
+    "repo_semantic_equivalent": null,
+    "repo_semantic_strength": "structural"
+  }
+}

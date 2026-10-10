@@ -1,0 +1,72 @@
+{
+ "qiskit": "2.4.2",
+ "compiled_U_stored_global_phase": 0.7853981633974483,
+ "phase_estimation": [
+  {
+   "case": "correct",
+   "delta": 0.0,
+   "tracker_equivalent": true,
+   "tracker_delta": 0.0,
+   "output_equivalent_modulo_phase": true,
+   "peak_estimate": 0.25,
+   "grid_step": 0.015625,
+   "continuous_phase": 0.25,
+   "continuous_shift": 0.0,
+   "modal_outcome_index": 16,
+   "modal_outcome": 0.25,
+   "P_modal_outcome": 0.9999999999999978,
+   "second_outcome_index": 17,
+   "second_outcome": 0.265625,
+   "P_second_outcome": 2.622649705581324e-30,
+   "nearest_grid_index": 16,
+   "P_true_outcome": 0.9999999999999978,
+   "total_variation_from_correct": 0.0
+  },
+  {
+   "case": "offset 0.3 rad (size of #16215)",
+   "delta": 0.3,
+   "tracker_equivalent": false,
+   "tracker_delta": 0.2999999999999998,
+   "output_equivalent_modulo_phase": true,
+   "peak_estimate": 0.296875,
+   "grid_step": 0.015625,
+   "continuous_phase": 0.2977464829275686,
+   "continuous_shift": 0.0477464829275686,
+   "modal_outcome_index": 19,
+   "modal_outcome": 0.296875,
+   "P_modal_outcome": 0.9898100230199558,
+   "second_outcome_index": 20,
+   "second_outcome": 0.3125,
+   "P_second_outcome": 0.003456116870369072,
+   "nearest_grid_index": 19,
+   "P_true_outcome": 0.0003322350225990901,
+   "total_variation_from_correct": 0.9996677649773978
+  },
+  {
+   "case": "offset pi/7 rad (size of #16201)",
+   "delta": 0.4487989505128276,
+   "tracker_equivalent": false,
+   "tracker_delta": 0.4487989505128276,
+   "output_equivalent_modulo_phase": true,
+   "peak_estimate": 0.328125,
+   "grid_step": 0.015625,
+   "continuous_phase": 0.3214285714285714,
+   "continuous_shift": 0.07142857142857142,
+   "modal_outcome_index": 21,
+   "modal_outcome": 0.328125,
+   "P_modal_outcome": 0.52440026704576,
+   "second_outcome_index": 20,
+   "second_outcome": 0.3125,
+   "P_second_outcome": 0.29500899943190895,
+   "nearest_grid_index": 21,
+   "P_true_outcome": 0.004686442714377265,
+   "total_variation_from_correct": 0.9953135572856211
+  }
+ ],
+ "readout": {
+  "trials": 60,
+  "nontrivial_final_layout": 60,
+  "correct_record_ok": 60,
+  "corrupted_record_wrong": 30
+ }
+}

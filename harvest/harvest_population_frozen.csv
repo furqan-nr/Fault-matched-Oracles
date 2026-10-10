@@ -1,0 +1,19 @@
+pr,sha,date,subject,n_files,transpiler_files,test_files,S4_subject_kw,S5_test_kw,role
+10151,a31be59248813ebe45a796e255fd8c8a4fe6041e,2026-09-06,fix template optimization bug (#10151),3,1,1,0,0,screened-out
+14925,510a5784e58c37dce60805c57c1e4e48865b4490,2025-08-18,Fix docstrings for CheckMap pass and tests (#14925),2,1,1,0,0,screened-out
+15417,35e7ce0a059e63198e4c7d92f4adee634d43c5af,2025-12-07,Fix OptimizeCliffordT to avoid throwing an error (#15417),2,1,1,0,0,screened-out
+15440,d76248551f38ae56ff6352098486aa20f512dad5,2025-12-13,Fix gridsynth plugin config (#15440),2,1,1,0,0,screened-out
+15623,90ab6e55c618bb768d3194bbc362693df77563ff,2026-03-12,Fix QPY bug with user-defined register named 'ancilla' (#15623),5,1,1,0,0,screened-out
+15683,0abd3086853693e14bdb14357c82814881bb2c81,2026-02-18,Fixing Qiskit typos (using Bob and codespell) (#15683),144,26,31,0,1,1B-harvest
+15807,fd2fd0d0cf86f26c61ec2a8b2bc6dcfd1cdc665b,2026-03-17,Fix approximate-by-default behaviour of `UnitarySynthesis` (#15807),7,4,1,0,0,screened-out
+16336,04e955cc7b92688b12d163899ea068e6f78e901a,2026-06-01,Fix seeding transpiler from environmental variable (#16336),5,1,3,1,0,1B-harvest
+16443,2cf97b58e5a1e4e086792a4306582fea39fe562f,2026-07-06,fixes #11393 sampled_expectation_value returning incorrect results for complex coefficients (gave 0.0 rather than 1j) (#16443),4,1,1,0,0,screened-out
+16592,2440bbb99e932ec87a56a8c4831d6fe8e26b8564,2026-07-23,Fix deadlock in Optimize1qGatesDecomposition (#16592),3,1,1,0,0,screened-out
+16880,9f1a177f20319ec04131153f431d3a1343484de8,2026-08-31,Fixed Litinski transformation on PPMs with negative phases (#16880),3,1,1,1,0,1B-harvest
+16884,b7b4701cfe8dabb90760faf45ccc9f850458687f,2026-09-07,Fix non-identity removal in ConsolidateBlocks for gates wider than 2 qubits (#16884),3,1,1,0,0,screened-out
+16896,66f6f9ca4d5f60f45da37c7980247e38df067f6c,2026-09-08,Fixed `HighLevelSynthesis` qubit tracking for if-then-else instructions (#16896),3,1,1,0,0,screened-out
+16920,65bd52bbbe826e2f751d88b9d5a70db8aa7b085a,2026-09-07,fix(transpiler): preserve layout in OptimizeSwapBeforeMeasure (#16920),3,1,1,1,0,1B-harvest
+16950,6d7432d0379545cf7884b295d5154a7d6a968f29,2026-09-08,Fix Litinski transformation on PPR with 32+ qubits (#16950),4,1,1,0,0,screened-out
+16963,a58029e2343ccc5cc99489524a9bfc7fd7838c30,2026-09-09,Fix GIL deadlock in `CommutationAnalysis` with Python-defined gates (#16963),5,2,2,0,0,screened-out
+16988,0131cbbcc85b42076bbcbdd16737c693007c34c2,2026-09-14,Fix: `CouplingMap` storing parallel edges (#16988),3,1,1,0,0,screened-out
+17020,195bfc662c8a643f89b401a64818e010192af48a,2026-09-21,Fix `Param` variants in `run_instruction_duration_check` (#17020),2,1,1,0,0,screened-out

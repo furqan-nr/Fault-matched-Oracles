@@ -4,7 +4,14 @@ param([Parameter(Mandatory=$true)][string]$Sha, [Parameter(Mandatory=$true)][str
 $ErrorActionPreference = "Stop"
 $Work = Join-Path $PSScriptRoot "_builds\$Name"
 $Py = Join-Path $Work "venv\Scripts\python.exe"
-if (Test-Path $Py) { Write-Host ">> $Name already built"; exit 0 }
+if (Test-Path $Py) {
+    $ErrorActionPreference = "Continue"
+    & $Py -c "import qiskit" 2>&1 | Out-Null
+    $ok = ($LASTEXITCODE -eq 0)
+    $ErrorActionPreference = "Stop"
+    if ($ok) { Write-Host ">> $Name already built"; exit 0 }
+    Write-Host ">> $Name venv exists but qiskit is not installed (earlier build failed); retrying the install"
+}
 if (-not (Get-Command cargo -ErrorAction SilentlyContinue)) { throw "Rust toolchain (cargo) not found" }
 New-Item -ItemType Directory -Force -Path $Work | Out-Null
 $SrcTree = Join-Path $Work "src"
@@ -12,7 +19,7 @@ if (-not (Test-Path $SrcTree)) {
     git -C (Join-Path $PSScriptRoot "_qiskit") worktree add --detach $SrcTree $Sha
     if ($LASTEXITCODE -ne 0) { throw "worktree add failed for $Sha" }
 }
-py -3.11 -m venv (Join-Path $Work "venv")
+if (-not (Test-Path $Py)) { py -3.11 -m venv (Join-Path $Work "venv") }
 & $Py -m pip install --upgrade "pip>=19" "setuptools-rust>=1.9" wheel
 & $Py -m pip install numpy sympy
 Write-Host ">> building Qiskit @ $Sha (several minutes)"

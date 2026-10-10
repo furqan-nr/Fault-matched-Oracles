@@ -20,7 +20,7 @@ fix's own regression test exactly
     routed = PassManager([Commuting2qGateRouter(swap_strat)]).run(circ)
     # upstream expects: routed.global_phase == circ.global_phase == 0.3
 
-Usage (from D:\CUSIT PhD\Post BASR -- both venvs already built, sv-16215-fix / sv-16215-bug):
+Usage (from the repository root -- both venvs already built, sv-16215-fix / sv-16215-bug):
 
   python scripts\verify_16215_router_phase.py `
     --baseline-python environment\_builds\sv-16215-fix\venv\Scripts\python.exe `

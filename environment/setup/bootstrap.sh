@@ -24,7 +24,6 @@ echo "==> E2: anchor/dev env (.venv-anchor = harness + Qiskit 2.4.2 wheel)"
 source .venv-anchor/bin/activate
 python -m pip install --upgrade "pip>=19" wheel
 python -m pip install -r environment/requirements.anchor.in
-python -m pip install -e .
 
 echo "==> E3: from-source Qiskit build smoke ($BUILD_TAG) [isolated venv]"
 bash environment/setup/build_qiskit_event.sh "$BUILD_TAG" "smoke-${BUILD_TAG//./_}"
@@ -33,7 +32,6 @@ echo "==> E4 + Phase 0 (in .venv-anchor)"
 # shellcheck disable=SC1091
 source .venv-anchor/bin/activate
 python environment/setup/check_feasibility.py
-python -m cart.cli manifest
-python -m pytest -q
+PYTHONPATH=src python -m cart.cli events validate
 
 echo "==> Done. Fill machine-specific fields in environment/ENV.md."

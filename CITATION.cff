@@ -1,15 +1,15 @@
 ﻿cff-version: 1.2.0
 message: "If you use this software, please cite both the software (metadata below) and the accompanying paper (see preferred-citation)."
-title: "Fault-Class-Matched Test Oracles for Output-Invisible Quantum Transpiler Faults (fault-matched-oracles)"
-version: "1.2.0"
-date-released: "2026-10-08"
+title: "Fault-matched oracles for output-invisible quantum transpiler faults (reproducibility package)"
+version: "1.2.1"
+date-released: "2026-10-09"
 license: MIT
 type: software
 repository-code: "https://github.com/furqan-nr/Fault-matched-Oracles"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.23245090"
-    description: "Archived software/data release (GitHub release tag v1.1.1), Zenodo."
+    description: "Archived software/data release (GitHub release tag v1.1.1), Zenodo. Replace by the DOI of v1.2.1 once that release is published."
 keywords:
   - quantum software engineering
   - quantum transpiler
@@ -29,7 +29,7 @@ abstract: >-
   metamorphic relation for the metadata channel, a global-phase tracker for the phase channel, and
   a determinism runner for the reproducibility channel, and verifies it from source on nine real,
   merged Qiskit transpiler regressions (three per channel), on synthetic mutant families built to
-  each channel's own invariant, and on a native port of the global-phase mechanism to pytket/tket.
+  each channel's own invariant, and on native pytket/tket ports of the global-phase tracker and the contract checker (synthetic faults only).
   The archive includes every verification script, the oracle source code, the already-executed
   result files each reported number traces to, and the environment/build protocol needed to
   rebuild any of it from source.
@@ -47,7 +47,7 @@ authors:
     affiliation: "City University of Science and Information Technology (CUSIT), Peshawar, Pakistan"
 preferred-citation:
   type: article
-  title: "Fault-Class-Matched Test Oracles for Output-Invisible Quantum Transpiler Faults"
+  title: "Detecting quantum transpiler faults that corrupt layout metadata, global phase or reproducibility while the compiled output stays correct"
   authors:
     - family-names: Nasir
       given-names: Furqan
@@ -57,6 +57,5 @@ preferred-citation:
       orcid: "https://orcid.org/0000-0003-0090-3333"
     - family-names: Alam
       given-names: Iftikhar
-  journal: "ACM Transactions on Quantum Computing"
   year: 2026
-  notes: "ACM. Status: manuscript prepared for submission; add volume, pages, and DOI on acceptance."
+  notes: "Status: prepared for submission to Scientific Reports; add journal, volume, pages, and DOI on publication."

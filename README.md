@@ -1,17 +1,16 @@
-# Fault-Class-Matched Test Oracles for Output-Invisible Quantum Transpiler Faults
+# Fault-matched oracles for output-invisible quantum transpiler faults: reproducibility package
 
-Reproducibility package for **"Fault-Class-Matched Test Oracles for Output-Invisible Quantum
-Transpiler Faults"** (Nasir, Shah, Alam; prepared for submission to *ACM Transactions on
-Quantum Computing*). This repository holds the oracle implementations, every
+Reproducibility package for **"Detecting quantum transpiler faults that corrupt layout metadata, global phase or reproducibility while the compiled output stays correct"**
+(Nasir, Shah, Alam; prepared for submission to *Scientific Reports*; this is release v1.2.1). This repository holds the oracle implementations, every
 verification and evaluation script, the already-executed evidence each reported number traces to,
 and the environment/build protocol needed to rebuild any of it from source.
 
 - **Repository:** https://github.com/furqan-nr/Fault-matched-Oracles
-- **Archive (DOI):** [10.5281/zenodo.23245090](https://doi.org/10.5281/zenodo.23245090)
+- **Archive (DOI):** [10.5281/zenodo.23245090](https://doi.org/10.5281/zenodo.23245090) (release v1.1.1). The DOI of release v1.2.1 is added here once the release is published on Zenodo.
 - **License:** MIT (see `LICENSE`)
 
 This is a **companion, independent artifact** to the empirical prevalence study behind it
-("An Empirical Study of Equivalence-Invisible Bug Fixes in Quantum Transpilers", preprint
+("What output-equivalence oracles miss: an empirical study of equivalence-invisible bug fixes in quantum transpilers", preprint
 arXiv:2609.13839, repository https://github.com/furqan-nr/quantum-observability). That companion
 paper is cited here once, for the invisible-fault rate its mining study measures; none of its own
 mining/coding data or scripts are duplicated in this repository, and none of this repository's
@@ -27,20 +26,27 @@ to an output-equivalence oracle by construction. This repository is the solution
 and a contract-level metamorphic relation (MR-1) for the metadata channel, a global-phase tracker
 for the phase channel, and a determinism runner for the reproducibility channel — verified from
 source on nine real, merged Qiskit transpiler regressions (three per channel), on synthetic mutant
-families built to each channel's own invariant, and on a native port of the global-phase mechanism
-to pytket/tket.
+families built to each channel's own invariant, and on native pytket/tket ports of the global-phase tracker and the contract checker (synthetic faults
+only).
 
 ## What's inside
 
-- `src/cart/` — the shared oracle/harness library the scripts below import. This paper's own
+- `src/cart/` — the oracle library and the minimal harness the scripts below import. This paper's own
   contribution is `src/cart/oracles/` (`contract_differ.py`, `metamorphic.py`, `global_phase.py`,
-  `semantic.py` — the output-equivalence baseline the family is compared against) and
-  `src/cart/events/mutations.py` (the mutation operators behind the synthetic mutant families).
-  The rest of the package (`manifest/`, `labels/`, `features/`, `gates/`, `metrics/`, `selectors/`,
-  `cli.py`) is shared harness infrastructure the scripts depend on at import time but that is not
-  itself part of this paper's reported contribution.
-- `scripts/` — every verification and evaluation script behind a reported number (26 files); see
-  `REPRODUCE.md` for which ones you can re-run directly and which need a from-source Qiskit build.
+  `semantic.py` — the output-equivalence baseline the family is compared against, plus the
+  determinism and layout-property helpers) and `src/cart/events/mutations.py` (the mutation operators
+  behind the synthetic mutant families). `metrics/curves.py` supplies the effect-size helpers used by the H4 performance check; `events/`, `labels/` and `manifest/` hold the historical-event
+  table, the per-event from-source runner and the circuit manifests the scripts import at run time;
+  `cli.py` exposes `events` and `historical-run`.
+- `scripts/` — every verification and evaluation script behind a reported number, including the
+  clean-compilation phase check (`phase_spec_check.py`), the downstream-use simulations
+  (`consequence_demo.py`) and the figure script (`make_figures.py`); see `REPRODUCE.md` for which ones
+  you can re-run directly and which need a from-source Qiskit build.
+- `expansion/` — the post hoc replication on further faults (build and probe scripts, saved results).
+- `harvest/` — the prospective harvest of later fixes: frozen protocol, the mechanical screen and its
+  frozen output, probe scripts and saved results.
+- `figures/` — Figures 1 and 2 of the manuscript (PNG and vector PDF) as drawn by `scripts/make_figures.py`.
+- `docs/` — the static mapping of the tket real faults to the contract checker.
 - `results/` — the already-executed evidence: `results/source_validation/` and the `results/sv-*/`
   directories (from-source build outputs and register/phase/DAG diffs for the nine real faults plus
   three investigated-but-not-promoted candidates), `results/bisect-*/` (every attempted automated
@@ -76,6 +82,14 @@ to pytket/tket.
 
     # tket cross-SDK transfer of the global-phase mechanism (needs pytket installed)
     python scripts/tket_global_phase_port.py
+    python scripts/tket_contract_port.py
+
+    # Clean-compilation phase check (2,400 correct compilations) and downstream-use simulations
+    python scripts/phase_spec_check.py
+    python scripts/consequence_demo.py
+
+    # Figures 1 and 2 (numpy and matplotlib only; reads results/consequence_demo.json and results/cost_scaling_eval.json)
+    python scripts/make_figures.py
 
     # Release-wheel retro-detection breadth study (pip-installs two Qiskit releases per fix, no compiler)
     python scripts/retro_detect_release.py

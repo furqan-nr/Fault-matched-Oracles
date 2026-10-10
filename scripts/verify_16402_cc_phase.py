@@ -17,7 +17,7 @@ the PR title (the standing lesson from #14939 and #15024 v1's inert generic trig
     tqc = cc(qc)
     # upstream expects global_phase == 0.0 for a P-gate run (only RZ carries a nonzero expected phase)
 
-Usage (from D:\CUSIT PhD\Post BASR -- both venvs already built, sv-16402-fix / sv-16402-bug):
+Usage (from the repository root -- both venvs already built, sv-16402-fix / sv-16402-bug):
 
   python scripts\verify_16402_cc_phase.py `
     --baseline-python environment\_builds\sv-16402-fix\venv\Scripts\python.exe `

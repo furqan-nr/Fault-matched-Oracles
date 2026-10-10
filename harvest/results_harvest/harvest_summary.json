@@ -1,0 +1,45 @@
+{
+  "16920": {
+    "reproduced": true,
+    "invisibility": "visible (measured outcome of the parent output differs from the input)",
+    "channel": "out of scope (property asserted: which qubit is measured; not layout/permutation metadata, global phase, or run-to-run stability)",
+    "notes": [
+      "fix outcome {'clbits': [1]}, bug outcome {'clbits': [0]}, input outcome {'clbits': [1]}",
+      "fix equals_expected=True bug equals_expected=False",
+      "bug output ops [['x', [2], []], ['measure', [1], [0]]] expected [['x', [2], []], ['measure', [2], [0]]]"
+    ],
+    "fix_version": "2.6.0.dev0",
+    "bug_version": "2.6.0.dev0"
+  },
+  "16880": {
+    "reproduced": true,
+    "invisibility": "visible (parent output measures a different signed Pauli than the input)",
+    "channel": "out of scope (property asserted: sign of a Pauli-product measurement is preserved)",
+    "notes": [
+      "Z: fix equal=True (pauli Z->Z); bug equal=True (pauli Z->Z)",
+      "-Z: fix equal=True (pauli -Z->-Z); bug equal=False (pauli -Z->Z)",
+      "X: fix equal=True (pauli X->X); bug equal=True (pauli X->X)",
+      "-X: fix equal=True (pauli -X->-X); bug equal=False (pauli -X->X)",
+      "Y: fix equal=True (pauli Y->Y); bug equal=True (pauli Y->Y)",
+      "-Y: fix equal=True (pauli -Y->-Y); bug equal=False (pauli -Y->Y)"
+    ],
+    "fix_version": "2.6.0.dev0",
+    "bug_version": "2.6.0.dev0"
+  },
+  "16336": {
+    "reproduced": true,
+    "invisibility": "invisible to output equivalence (output is a valid, equivalent circuit for any seed)",
+    "channel": "out of scope under the literal rule (property asserted: the seed value reaching the layout pass; not run-to-run or ordering stability). Supplementary seed-honouring result in notes.",
+    "notes": [
+      "seed seen by SabreLayout.run: fix ['1234'] (['int']), bug ['1'] (['int'])",
+      "env_vs_env_equal: fix=True bug=True",
+      "env_vs_explicit1234_equal: fix=True bug=False",
+      "env_vs_explicit1_equal: fix=False bug=True",
+      "explicit1234_vs_explicit1_equal: fix=False bug=False",
+      "explicit1234_run_to_run_equal: fix=True bug=True",
+      "repo check_semantic on env run: fix=None bug=None (structural)"
+    ],
+    "fix_version": "2.5.0.dev0",
+    "bug_version": "2.5.0.dev0"
+  }
+}

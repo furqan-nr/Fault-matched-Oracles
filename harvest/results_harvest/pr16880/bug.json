@@ -1,0 +1,79 @@
+{
+  "pr": "16880",
+  "label": "bug",
+  "qiskit": "2.6.0.dev0",
+  "result": {
+    "Z": {
+      "ran": true,
+      "equal": true,
+      "input_ops": [
+        "pauli_product_measurement"
+      ],
+      "output_ops": [
+        "pauli_product_measurement"
+      ],
+      "input_pauli": "Z",
+      "output_pauli": "Z"
+    },
+    "-Z": {
+      "ran": true,
+      "equal": false,
+      "input_ops": [
+        "pauli_product_measurement"
+      ],
+      "output_ops": [
+        "pauli_product_measurement"
+      ],
+      "input_pauli": "-Z",
+      "output_pauli": "Z"
+    },
+    "X": {
+      "ran": true,
+      "equal": true,
+      "input_ops": [
+        "pauli_product_measurement"
+      ],
+      "output_ops": [
+        "pauli_product_measurement"
+      ],
+      "input_pauli": "X",
+      "output_pauli": "X"
+    },
+    "-X": {
+      "ran": true,
+      "equal": false,
+      "input_ops": [
+        "pauli_product_measurement"
+      ],
+      "output_ops": [
+        "pauli_product_measurement"
+      ],
+      "input_pauli": "-X",
+      "output_pauli": "X"
+    },
+    "Y": {
+      "ran": true,
+      "equal": true,
+      "input_ops": [
+        "pauli_product_measurement"
+      ],
+      "output_ops": [
+        "pauli_product_measurement"
+      ],
+      "input_pauli": "Y",
+      "output_pauli": "Y"
+    },
+    "-Y": {
+      "ran": true,
+      "equal": false,
+      "input_ops": [
+        "pauli_product_measurement"
+      ],
+      "output_ops": [
+        "pauli_product_measurement"
+      ],
+      "input_pauli": "-Y",
+      "output_pauli": "Y"
+    }
+  }
+}

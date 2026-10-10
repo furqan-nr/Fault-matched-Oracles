@@ -1,13 +1,13 @@
 # Paper 1B - real-fault expansion: exact run sheet (Windows PowerShell)
 
 Everything lives in this folder; Post BASR source/data are never modified.
-Folder: D:\CUSIT PhD\Post BASR\Paper 1 - Observability\Paper 1B\expansion
+Folder: `expansion/` in this repository
 
 ## 0. Prerequisites (you already have these from the 1A builds)
 py -3.11 --version ; cargo --version ; git --version
 
 ## 1. Resolve SHAs + clone Qiskit (REQUIRED once)  [~2-5 min]
-cd "D:\CUSIT PhD\Post BASR\Paper 1 - Observability\Paper 1B\expansion"
+cd expansion
 powershell -ExecutionPolicy Bypass -File .\resolve_shas.ps1
 # targets_expansion.csv is already pre-filled (squash commits verified by subject line).
 # Step 2 needs the _qiskit clone, so run step 1 at least once.

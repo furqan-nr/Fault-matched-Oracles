@@ -31,7 +31,7 @@ def repo_oracles():
     import os
     here = os.path.dirname(os.path.abspath(__file__))
     cand = os.path.dirname(here)  # when this folder sits inside the repo (expansion/), repo root is its parent
-    default = cand if os.path.isdir(os.path.join(cand, "src", "cart")) else r"D:\CUSIT PhD\Fault matched Oracles"
+    default = cand
     repo = os.environ.get("FMO_REPO", default)
     sys.path.insert(0, os.path.join(repo, "src"))
     from cart.oracles.global_phase import check_global_phase

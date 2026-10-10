@@ -25,7 +25,7 @@ Runs the probe in N separate fresh processes per build (like the project's own P
 protocol for #14730/#16237), since this non-determinism is a hash-map iteration order that -- like
 PYTHONHASHSEED-driven dict ordering -- may only vary ACROSS process restarts, not within one.
 
-Usage (from D:\CUSIT PhD\Post BASR -- both venvs already built, sv-15040-fix / sv-15040-bug):
+Usage (from the repository root -- both venvs already built, sv-15040-fix / sv-15040-bug):
 
   python scripts\verify_15040_dag_order.py `
     --baseline-python environment\_builds\sv-15040-fix\venv\Scripts\python.exe `
